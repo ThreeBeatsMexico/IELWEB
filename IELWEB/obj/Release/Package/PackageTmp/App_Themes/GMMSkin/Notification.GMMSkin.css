@@ -1,0 +1,37 @@
+.RadNotification_GMMSkin
+{
+	border:1px solid #cccccc;
+	background-color:#0077d9;
+	color:black;
+}
+.RadNotification_GMMSkin.rnRoundedCorners
+{
+	border-radius:0;
+}
+.RadNotification_GMMSkin .rnTitleBar
+{
+	background-color:#0077d9;
+	border-radius:0;
+}
+.RadNotification_GMMSkin .rnCommands a
+{
+	background-image:url('Notification/NotificationSprite.png');
+}
+.RadNotification_GMMSkin .rnTitleBarTitle
+{
+	color:white;
+	font-size:14px;
+	text-transform:none;
+}
+.RadNotification_GMMSkin .rnContentWrapper
+{
+	color:white;
+}
+.RadNotification_GMMSkin .rnCommands
+{
+	margin:2px 3px 0 0;
+}
+.RadNotification_GMMSkin .rnCommands li
+{
+	margin-right:1px;
+}

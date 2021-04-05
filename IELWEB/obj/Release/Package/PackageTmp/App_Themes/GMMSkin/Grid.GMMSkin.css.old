@@ -1,0 +1,81 @@
+.RadGrid_GMMSkin{border:1px solid #d9d9d9;background:white;color:#333333;font:normal 13px Arial,Helvetica,sans-serif;line-height:22px}.RadGrid_GMMSkin .rgMasterTable,.RadGrid_GMMSkin .rgDetailTable,.RadGrid_GMMSkin .rgGroupPanel table,.RadGrid_GMMSkin .rgCommandRow table,.RadGrid_GMMSkin .rgEditForm table,.RadGrid_GMMSkin .rgPager table{font:normal 13px Arial,Helvetica,sans-serif;line-height:22px}.RadGrid_GMMSkin .rgAdd,.RadGrid_GMMSkin .rgRefresh,.RadGrid_GMMSkin .rgEdit,.RadGrid_GMMSkin .rgDel,.RadGrid_GMMSkin .rgExpand,.RadGrid_GMMSkin .rgCollapse,.RadGrid_GMMSkin .rgSortAsc,.RadGrid_GMMSkin .rgSortDesc,.RadGrid_GMMSkin .rgUpdate,.RadGrid_GMMSkin .rgCancel,.RadGrid_GMMSkin .rgUngroup,.RadGrid_GMMSkin .rgExpXLS,.RadGrid_GMMSkin .rgExpDOC,.RadGrid_GMMSkin .rgExpPDF,.RadGrid_GMMSkin .rgExpCSV{background-image:url('Common/radActionsSprite.png')}.RadGrid_GMMSkin .rgFilter,.RadGrid_GMMSkin .rgPageFirst,.RadGrid_GMMSkin .rgPagePrev,.RadGrid_GMMSkin .rgPageNext,.RadGrid_GMMSkin .rgPageLast{background-image:url('Grid/sprite.png')}.GridToolTip_GMMSkin{font:normal 13px Arial,Helvetica,sans-serif;line-height:22px}.RadGrid_GMMSkin .rgHeader:first-child,.RadGrid_GMMSkin th.rgResizeCol:first-child,.RadGrid_GMMSkin .rgFilterRow>td:first-child,.RadGrid_GMMSkin .rgRow>td:first-child,.RadGrid_GMMSkin .rgAltRow>td:first-child{border-left-width:0;padding-left:8px}.RadGrid_GMMSkin .rgHeader,.RadGrid_GMMSkin th.rgResizeCol,.RadGrid_GMMSkin .rgHeaderWrapper,.RadGrid_GMMSkin .rgFilterRow{background-color:#e6e6e6;border-bottom:1px solid white}.RadGrid_GMMSkin .rgHeaderDiv{border-right-color:white}.RadGrid_GMMSkin .rgMultiHeaderRow th.rgHeader,.RadGrid_GMMSkin .rgMultiHeaderRow th.rgResizeCol{border:0;border-bottom:1px solid white;border-left:1px solid white}.RadGrid_GMMSkin th.rgSorted{background-color:#c2c2c2;color:#333333}.RadGrid_GMMSkin .rgHeader{color:#878787;text-transform:none;font-size:9px}.RadGrid_GMMSkin .rgHeader a{color:#878787}.RadGrid_GMMSkin .rgRow td,.RadGrid_GMMSkin .rgAltRow td,.RadGrid_GMMSkin .rgEditRow td,.RadGrid_GMMSkin .rgFooter td{border-style:solid;border-bottom:1px solid #e3e3e3;border-width:0 0 1px}.RadGrid_GMMSkin .rgRow a,.RadGrid_GMMSkin .rgAltRow a,.RadGrid_GMMSkin tr.rgEditRow a,.RadGrid_GMMSkin .rgFooter a,.RadGrid_GMMSkin .rgEditForm a{color:#000000}.RadGrid_GMMSkin .rgHoveredRow{background:#e6e6e6}.RadGrid_GMMSkin .rgMasterTable .rgSelectedCell,.RadGrid_GMMSkin .rgSelectedRow{color:#333333;background:#fcffe8}.RadGrid_GMMSkin .rgSelectedCell a,.RadGrid_GMMSkin .rgSelectedRow a{color:#333333}.RadGrid_GMMSkin .rgMasterTable .rgActiveCell,.RadGrid_GMMSkin .rgActiveRow{color:#333333;background:#fcffe8}.RadGrid_GMMSkin .rgMasterTable .rgActiveCell input,.RadGrid_GMMSkin .rgMasterTable .rgActiveCell a,.RadGrid_GMMSkin .rgActiveRow input,.RadGrid_GMMSkin .rgActiveRow a{color:#333333}.RadGrid_GMMSkin .rgHoveredRow{background:#bbd6f2;color:#333333}.RadGrid_GMMSkin .rgHoveredRow a{color:#333333}.RadGrid_GMMSkin .rgSorted{background-color:#f2f2f2;color:black}.RadGrid_GMMSkin .rgSelectedRow .rgSorted{background-color:#f1f2e1}.RadGrid_GMMSkin .rgHoveredRow .rgSorted{background-color:#c3d7eb}.RadGrid_GMMSkin .rgEditRow td{border-color:#616161 #c2c2c2}.RadGrid_GMMSkin .rgEditRow td.rgSorted{border-color:#616161 #c2c2c2}.RadGrid_GMMSkin .rgDrag{background-image:url('Grid/rgDrag.gif')}.RadGrid_GMMSkin .rgFooterDiv,.RadGrid_GMMSkin .rgFooter,.RadGrid_GMMSkin .rgFooterWrapper{background:#e3e3e3}.RadGrid_GMMSkin .rgFooter td,.RadGrid_GMMSkin .rgFooterWrapper{border-top:1px solid;border-color:#999999 #e3e3e3}.RadGrid_GMMSkin .rgPager{background-color:#e6e6e6;color:#545454}.RadGrid_GMMSkin td.rgPagerCell,.RadGrid_GMMSkin .rgPager .rgStatus{border:1px solid #d9d9d9;border-width:1px 0}.RadGrid_GMMSkin .rgStatus div{background-image:url('Common/loading_small.gif')}.RadGrid_GMMSkin .rgInfoPart strong{color:black}.RadGrid_GMMSkin .rgPageFirst,.RadGrid_GMMSkin .rgPagePrev,.RadGrid_GMMSkin .rgPageNext,.RadGrid_GMMSkin .rgPageLast{width:30px;height:30px}.RadGrid_GMMSkin .rgPageFirst{background-position:0 -150px}.RadGrid_GMMSkin .rgPageFirst:hover{background-position:0 -350px}.RadGrid_GMMSkin .rgPageFirst:active{background-position:0 -550px}.RadGrid_GMMSkin .rgPagePrev{background-position:0 -200px}.RadGrid_GMMSkin .rgPagePrev:hover{background-position:0 -400px}.RadGrid_GMMSkin .rgPagePrev:active{background-position:0 -600px}.RadGrid_GMMSkin .rgPageNext{background-position:0 -250px}.RadGrid_GMMSkin .rgPageNext:hover{background-position:0 -450px}.RadGrid_GMMSkin .rgPageNext:active{background-position:0 -650px}.RadGrid_GMMSkin .rgPageLast{background-position:0 -300px}.RadGrid_GMMSkin .rgPageLast:hover{background-position:0 -500px}.RadGrid_GMMSkin .rgPageLast:active{background-position:0 -700px}.RadGrid_GMMSkin .rgPager .rgPagerButton{border-color:#c9c9c9;color:#3b3b3b;background-color:#ebebeb;background-image:-webkit-linear-gradient(top,#ffffff 0,#e3e3e3 100%);background-image:-moz-linear-gradient(top,#ffffff 0,#e3e3e3 100%);background-image:-ms-linear-gradient(top,#ffffff 0,#e3e3e3 100%);background-image:-o-linear-gradient(top,#ffffff 0,#e3e3e3 100%);background-image:linear-gradient(top,#ffffff 0,#e3e3e3 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#e3e3e3',GradientType=0);box-shadow:0 1px 2px rgba(0,0,0,0.2);border-radius:4px;border:1px solid #c9c9c9;color:#3b3b3b;font-size:13px;font-family:Arial,Helvetica,sans-serif;line-height:22px}.RadGrid_GMMSkin .rgNumPart a{border-radius:4px;line-height:28px;color:#333333;margin-right:1px;margin-top:1px}.RadGrid_GMMSkin .rgNumPart a:hover{color:black;background-image:-webkit-linear-gradient(top,#d6d6d6 0,#919191 100%);background-image:-moz-linear-gradient(top,#d6d6d6 0,#919191 100%);background-image:-ms-linear-gradient(top,#d6d6d6 0,#919191 100%);background-image:-o-linear-gradient(top,#d6d6d6 0,#919191 100%);background-image:linear-gradient(top,#d6d6d6 0,#919191 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d6d6d6',endColorstr='#919191',GradientType=0)}.RadGrid_GMMSkin .rgNumPart a.rgCurrentPage{background:none repeat scroll 0 0 #cccccc;border:1px solid #fafafa;box-shadow:0 0 1px 1px rgba(72,72,72,0.4) inset;color:black;margin-top:0}.RadGrid_GMMSkin .rgSortAsc{background-position:-17.5px -18px;height:14px;width:15px}.RadGrid_GMMSkin .rgSortDesc{background-position:-17.5px -68px;height:14px;width:15px}.RadGrid_GMMSkin .rgFilterRow td{border-bottom:1px solid #d9d9d9}.RadGrid_GMMSkin .rgFilter{width:32px;height:32px}.RadGrid_GMMSkin .rgFilter{background-position:0 0}.RadGrid_GMMSkin .rgFilter:hover{background-position:0 -50px}.RadGrid_GMMSkin:hover,.RadGrid_GMMSkin .rgFilterActive{background-position:0 -100px}.RadGrid_GMMSkin input.rgFilterBox{border-color:#d9d9d9;font:12px "segoe ui",arial,sans-serif;color:#000000;height:21px;vertical-align:top}.RadMenu_GMMSkin .rgHCMClear,.RadMenu_GMMSkin .rgHCMFilter{border-color:#7d7d7d;background:#2564d9;color:#000000;font-family:"segoe ui",arial,sans-serif;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0}.RadMenu_GMMSkin .rgHCMClear:hover,.RadMenu_GMMSkin .rgHCMFilter:hover{border-color:#c9c600;background-color:#f7ff9c;color:#875201}.GridContextMenu_GMMSkin .rmLeftImage{background-image:url('Common/contextMenu.gif')}.GridContextMenu_GMMSkin .rgHCMSortAsc .rmLeftImage{background-position:0 0}.GridContextMenu_GMMSkin .rgHCMSortDesc .rmLeftImage{background-position:0 -40px}.GridContextMenu_GMMSkin .rgHCMUnsort .rmLeftImage{background-position:0 -80px}.GridContextMenu_GMMSkin .rgHCMGroup .rmLeftImage{background-position:0 -120px}.GridContextMenu_GMMSkin .rgHCMUngroup .rmLeftImage{background-position:0 -160px}.GridContextMenu_GMMSkin .rgHCMCols .rmLeftImage{background-position:0 -200px}.GridContextMenu_GMMSkin .rgHCMFilter .rmLeftImage{background-position:0 -240px}.GridContextMenu_GMMSkin .rgHCMUnfilter .rmLeftImage{background-position:0 -280px}.RadGrid_GMMSkin .rgGroupPanel{background-color:#e6e6e6;border:0;border-bottom:1px solid white;color:#5e5e5e}.RadGrid_GMMSkin .rgGroupPanel td{border:0;padding:3px 4px}.RadGrid_GMMSkin .rgGroupPanel td td{padding:0}.RadGrid_GMMSkin .rgUngroup{background-position:0 -6999px}.RadGrid_GMMSkin .rgGroupItem{border-color:#c9c9c9;color:#3b3b3b;background-color:#ebebeb;background-image:-webkit-linear-gradient(top,#ffffff 0,#e3e3e3 100%);background-image:-moz-linear-gradient(top,#ffffff 0,#e3e3e3 100%);background-image:-ms-linear-gradient(top,#ffffff 0,#e3e3e3 100%);background-image:-o-linear-gradient(top,#ffffff 0,#e3e3e3 100%);background-image:linear-gradient(top,#ffffff 0,#e3e3e3 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#e3e3e3',GradientType=0);color:#3b3b3b;border:1px solid #c9c9c9;border-radius:4px}.RadGrid_GMMSkin .rgGroupHeader{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='white',endColorstr='#d6d6d4',GradientType=0);background-image:-webkit-linear-gradient(top,white 0,#f2f2f2 30%,#d6d6d4 100%);background-image:-moz-linear-gradient(top,white 0,#f2f2f2 30%,#d6d6d4 100%);background-image:-ms-linear-gradient(top,white 0,#f2f2f2 30%,#d6d6d4 100%);background-image:-o-linear-gradient(top,white 0,#f2f2f2 30%,#d6d6d4 100%);background-image:linear-gradient(top,white 0,#f2f2f2 30%,#d6d6d4 100%);box-shadow:0 1px 3px #d6d6d6;font-size:11px;text-transform:none;line-height:22px;color:#878787}.RadGrid_GMMSkin .rgGroupHeader td{padding:5px 8px 2px;border-bottom:1px solid #e3e3e3}.RadGrid_GMMSkin .rgExpand{background-position:-16px -168px}.RadGrid_GMMSkin .rgCollapse{background-position:-66px -68px}.RadGrid_GMMSkin .rgEditForm{border-bottom:1px solid #999999}.RadGrid_GMMSkin .rgUpdate{background-position:0 -1800px}.RadGrid_GMMSkin .rgCancel{background-position:0 -1850px}.RadGrid_GMMSkin .rgDetailTable{border-color:#999999}.RadGrid_GMMSkin .rgCommandRow{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='white',endColorstr='#d6d6d4',GradientType=0);background-image:-webkit-linear-gradient(top,white 0,#f2f2f2 30%,#d6d6d4 100%);background-image:-moz-linear-gradient(top,white 0,#f2f2f2 30%,#d6d6d4 100%);background-image:-ms-linear-gradient(top,white 0,#f2f2f2 30%,#d6d6d4 100%);background-image:-o-linear-gradient(top,white 0,#f2f2f2 30%,#d6d6d4 100%);background-image:linear-gradient(top,white 0,#f2f2f2 30%,#d6d6d4 100%);box-shadow:0 1px 3px #d6d6d6;color:#5e5e5e;text-decoration:none}.RadGrid_GMMSkin .rgCommandRow a{color:#5e5e5e;text-decoration:none}.RadGrid_GMMSkin .rgCommandCell{border:0;border-bottom:1px solid #d9d9d9;padding:0}.RadGrid_GMMSkin tfoot .rgCommandCell,.RadGrid_GMMSkin .rgMasterTable>tbody>tr.rgCommandRow .rgCommandCell{border-top:1px solid #d9d9d9;border-bottom:0}.RadGrid_GMMSkin .rgCommandTable{border:0}.RadGrid_GMMSkin .rgCommandTable td{border:0;padding:2px 7px}.RadGrid_GMMSkin .rgAdd{margin-right:3px;width:20px;height:20px;vertical-align:top;background-position:-15px -2315px}.RadGrid_GMMSkin .rgAdd:hover{background-position:-65px -2315px}.RadGrid_GMMSkin .rgRefresh{margin-right:3px;width:20px;height:20px;vertical-align:top;background-position:-15px -1015px}.RadGrid_GMMSkin .rgRefresh:hover{background-position:-65px -1015px}.RadGrid_GMMSkin .rgEdit{margin-right:3px;background-position:-17px -2417px}.RadGrid_GMMSkin .rgEdit:hover{background-position:-67px -2417px}.RadGrid_GMMSkin .rgDel{margin-right:3px;background-position:-17px -2617px}.RadGrid_GMMSkin .rgDel:hover{background-position:-67px -2617px}.RadGrid_GMMSkin .rgExpXLS,.RadGrid_GMMSkin .rgExpDOC,.RadGrid_GMMSkin .rgExpPDF,.RadGrid_GMMSkin .rgExpCSV{background-image:url('Common/export.gif')}.RadGrid_GMMSkin .rgExpXLS{background-position:0 0}.RadGrid_GMMSkin .rgExpDOC{background-position:0 -50px}.RadGrid_GMMSkin .rgExpPDF{background-position:0 -100px}.RadGrid_GMMSkin .rgExpCSV{background-position:0 -150px}.rgCellSelectorArea_GMMSkin,.GridRowSelector_GMMSkin{background:#4c4c54}.GridItemDropIndicator_GMMSkin{border-top:1px dashed #666666}.GridReorderTop_GMMSkin,.GridReorderBottom_GMMSkin{background-image:url('Common/radActionsSprite.png');background-repeat:no-repeat;background-position:-20px -70px}.GridReorderBottom_GMMSkin{background-position:-20px -20px}.GridToolTip_GMMSkin{border:1px solid #c9c600;padding:3px;background:#f9ffbd;color:#333333}.RadGridRTL_GMMSkin .rgHeader:first-child,.RadGridRTL_GMMSkin th.rgResizeCol:first-child,.RadGridRTL_GMMSkin .rgFilterRow>td:first-child,.RadGridRTL_GMMSkin .rgRow>td:first-child,.RadGridRTL_GMMSkin .rgAltRow>td:first-child{border-left-width:1px;padding-left:7px}.RadGridRTL_GMMSkin .rgPageFirst{background-position:0 -300px}.RadGridRTL_GMMSkin .rgPageFirst:hover{background-position:0 -500px}.RadGridRTL_GMMSkin .rgPageFirst:active{background-position:0 -700px}.RadGridRTL_GMMSkin .rgPagePrev{background-position:0 -250px}.RadGridRTL_GMMSkin .rgPagePrev:hover{background-position:0 -450px}.RadGridRTL_GMMSkin .rgPagePrev:active{background-position:0 -650px}.RadGridRTL_GMMSkin .rgPageNext{background-position:0 -200px}.RadGridRTL_GMMSkin .rgPageNext:hover{background-position:0 -400px}.RadGridRTL_GMMSkin .rgPageNext:active{background-position:0 -600px}.RadGridRTL_GMMSkin .rgPageLast{background-position:0 -150px}.RadGridRTL_GMMSkin .rgPageLast:hover{background-position:0 -350px}.RadGridRTL_GMMSkin .rgPageLast:active{background-position:0 -550px}
+
+ div.RadGrid_GMMSkin .rgCommandRow {
+
+	color: rgb(255, 0, 255);
+
+}
+
+ div.RadGrid_GMMSkin th.rgResizeCol {
+
+	background-color: rgb(153, 204, 255);
+
+}
+
+ div.RadGrid_GMMSkin .rgHeader {
+
+	background-color: rgb(153, 204, 255);
+
+	color: rgb(0, 0, 0);
+
+	font-weight: bold;
+
+	text-indent: 1px;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ div.RadGrid_GMMSkin .rgHeader a {
+
+	color: rgb(0, 0, 0);
+
+	font-weight: bold;
+
+	text-indent: 1px;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ div.RadGrid_GMMSkin .rgFooter td {
+
+	background-color: rgb(0, 102, 204);
+
+	color: rgb(255, 255, 255);
+
+}
+
+
+
+
+ div.RadGrid_GMMSkin .rgRow .rgSorted {
+
+	background-color: rgb(204, 204, 204);
+
+}
+
+ div.RadGrid_GMMSkin tr.rgSelectedRow {
+
+	background-color: rgb(187, 187, 187);
+
+}
+
+ div.RadGrid_GMMSkin table .rgActiveRow {
+
+	background-color: rgb(136, 136, 136);
+
+}
+
+ div.RadGrid_GMMSkin .rgAltRow .rgSorted {
+
+	background-color: rgb(204, 204, 204);
+
+}
+
+ div.RadGrid_GMMSkin .rgPager .rgPagerCell {
+
+	font-size: 10px;
+
+}
+

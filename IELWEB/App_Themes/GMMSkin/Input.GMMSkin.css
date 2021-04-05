@@ -1,0 +1,102 @@
+html body .RadInput_GMMSkin .riTextBox,html body .RadInputMgr_GMMSkin
+{
+	background:white;
+	color:#545454;
+	border-color:#4cb6e1;
+	font-weight:normal;
+	font-size:13px;
+	font-family:Arial,Helvetica,sans-serif;height:28px
+}
+html body .RadInput_GMMSkin .riEmpty,html body .RadInput_Empty_GMMSkin
+{
+	color:white;
+}
+html body .RadInput_GMMSkin .riHover,html body .RadInput_Hover_GMMSkin
+{
+	border-color:#4e4e4e;
+	color:#454545;
+}
+html body .RadInput_GMMSkin .riFocused,html body .RadInput_Focused_GMMSkin
+{
+	border:#82dafd solid 1px;
+	background:#dff6ff;
+}
+html body .RadInput_GMMSkin .riRead,html body .RadInput_Read_GMMSkin
+{
+	border-color:#d6d6d6
+}
+html body .RadInput_GMMSkin .riDisabled,html body .RadInput_Disabled_GMMSkin
+{
+	Opacity:.5;-moz-opacity:.5;filter:alpha(opacity=50);cursor:default
+}
+html body .RadInput_GMMSkin .riError,html body .RadInput_Error_GMMSkin
+{
+	border-color:red;background:white;color:red
+}
+.RadForm.rfdTextbox .RadInput_GMMSkin .riError[type="text"],.RadForm.rfdTextbox .RadInput_Error_GMMSkin[type="text"]
+{
+	border-color:red;background:white;color:red
+}
+html body .RadInput_GMMSkin .riNegative,html body .RadInput_Negative_GMMSkin
+{
+	color:#6e6e6e
+}
+.RadInput_GMMSkin a
+{
+	background:transparent no-repeat url('Common/radActionsSprite.png')
+}
+.RadInput_GMMSkin .riBtn a
+{
+	width:20px;height:28px;line-height:28px;background-position:-14px -3214px
+}
+.RadInput_GMMSkin a.riButton
+{
+	background-position:-14px -3214px
+}
+.RadInput_GMMSkin a.riButton:hover
+{
+	background-position:-64px -3214px
+}
+.RadInput_GMMSkin .riSpin a
+{
+	width:15px;height:14px;line-height:14px
+}
+.RadInput_GMMSkin a.riUp,.RadInput_GMMSkin a.riDown
+{
+	height:14px
+}
+.RadInput_GMMSkin a.riUp
+{
+	background-position:-18px -17.5px
+}
+.RadInput_GMMSkin a.riUp:hover
+{
+	background-position:-68px -17.5px
+}
+.RadInput_GMMSkin a.riDown
+{
+	background-position:-18px -67.5px
+}
+.RadInput_GMMSkin a.riDown:hover
+{
+	background-position:-68px -67.5px
+}
+.RadInput_GMMSkin .riLabel
+{
+	color:#545454
+}
+html body .RadInputRTL_GMMSkin .riError,html body .RadInputRTL_Error_GMMSkin
+{
+	background-position:3px -298px
+}
+.RadForm.rfdTextbox .RadInputRTL_GMMSkin .riError[type="text"],.RadForm.rfdTextbox .RadInputRTL_Error_GMMSkin[type="text"]
+{
+	background-position:3px -298px
+}
+ .RadInput_GMMSkin INPUT.riTextBox {
+
+	FONT-SIZE: 12px;
+
+	HEIGHT: 20px;
+}
+

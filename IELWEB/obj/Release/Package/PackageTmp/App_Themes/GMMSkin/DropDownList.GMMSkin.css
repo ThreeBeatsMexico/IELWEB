@@ -1,0 +1,22 @@
+.RadDropDownList_GMMSkin{color:#3b3b3b;font:normal 13px/22px Arial,Helvetica,sans-serif}.RadDropDownList_GMMSkin .rddlInner{background-image:-webkit-linear-gradient(top,#ffffff 0,#e3e3e3 100%);background-image:-moz-linear-gradient(top,#ffffff 0,#e3e3e3 100%);background-image:-ms-linear-gradient(top,#ffffff 0,#e3e3e3 100%);background-image:-o-linear-gradient(top,#ffffff 0,#e3e3e3 100%);background-image:linear-gradient(top,#ffffff 0,#e3e3e3 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#e3e3e3',GradientType=0);border-color:#c9c9c9;color:#3b3b3b;background-color:#ebebeb;height:22px}.RadDropDownList_GMMSkin .rddlFakeInput{height:22px;line-height:22px}.RadDropDownList_GMMSkin .rddlDefaultMessage{color:#8a8a8a;font-style:italic}.RadDropDownList_GMMSkin .rddlIcon,.RadDropDownList_GMMSkin .rddlActionButton{width:24px;height:26px;background-image:url('Common/radActionsSprite.png');_background-image:url('Common/radActionsSprite.png');background-position:-13px -62px}.rddlPopup_GMMSkin{border-color:#d6d6d6;color:#545454;background:white;font:normal 13px/22px Arial,Helvetica,sans-serif}.rddlPopup_GMMSkin .rddlHeader,.rddlPopup_GMMSkin rddlFooter{color:#5e5e5e;background-color:#ebebeb}.rddlPopup_GMMSkin .rddlHeader{border-bottom-color:#d6d6d6}.rddlPopup_GMMSkin rddlFooter{border-top-color:#d6d6d6}.rddlPopup_GMMSkin .rddlList{color:#545454;background-color:white}.rddlPopup_GMMSkin .rddlItemHovered{color:#545454;background:#83bbf2}.rddlPopup_GMMSkin .rddlItemSelected{color:black;background:#faffd1}.rddlPopup_GMMSkin .rddlItemDisabled{color:#d6d6d6;background-color:transparent}.rddlPopup_GMMSkin .rddlItemLoading{color:#545454;background:#83bbf2}
+
+
+
+ DIV.RadDropDownList_GMMSkin .rddlInner {
+	HEIGHT: 15px;
+	WIDTH: 131px;
+	PADDING-RIGHT: 2px;
+}
+ DIV.RadDropDownList_GMMSkin .rddlFakeInput {
+	LINE-HEIGHT: 14px;
+}
+ DIV.RadDropDownList_GMMSkin .rddlIcon {
+	FONT-SIZE: 12px;
+	HEIGHT: 25px;
+	WIDTH: 24px;
+	LINE-HEIGHT: 14px;
+	TEXT-INDENT: 0px;
+}
+ DIV.RadDropDownList_GMMSkin .rddlFakeInput {
+	FONT-SIZE: 12px;
+}

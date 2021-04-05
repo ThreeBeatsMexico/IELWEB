@@ -1,0 +1,75 @@
+/* ------------------------------------------
+PURE CSS SPEECH BUBBLES
+by Nicolas Gallagher
+- http://nicolasgallagher.com/pure-css-speech-bubbles/
+
+http://nicolasgallagher.com
+http://twitter.com/necolas
+
+Created: 02 March 2010
+Version: 1.2 (03 March 2011)
+
+Dual licensed under MIT and GNU GPLv2 © Nicolas Gallagher 
+------------------------------------------ */
+
+/* NOTE: Some declarations use longhand notation so that it can be clearly
+explained what specific properties or values do and what their relationship
+is to other properties or values in creating the effect */
+
+/* ============================================================================================================================
+== GENERAL STYLES
+** ============================================================================================================================ */
+
+bodyBubble {
+    padding:0; 
+    margin:0; 
+    font:1em/1.4 Cambria, Georgia, sans-serif; 
+    color:#333; 
+    background:#fff;
+}
+
+
+
+#containerBubble {
+    width:500px; 
+    padding:0 0 50px; 
+    margin:0 auto;
+}
+
+h1 {
+    margin:1em 0 0; 
+    font-size:2.5em; 
+    font-weight:normal; 
+    line-height:1.2; 
+    text-align:center;
+}
+
+h2 {
+    margin:0.5em 0 1.5em; 
+    font-size:1.25em; 
+    font-weight:normal; 
+    font-style:italic; 
+    text-align:center;
+}
+
+p {
+    margin:1em 0;
+}
+
+.contentBubble h2 {
+    margin:2em 0 0.75em; 
+    font-size:2em; 
+    font-weight:bold; 
+    font-style:normal; 
+    text-align:left;
+}
+
+blockquoteBubble {
+    margin:1em 0;
+}
+
+blockquoteBubble p {
+    margin:0; 
+    font-size:2em;
+}
+

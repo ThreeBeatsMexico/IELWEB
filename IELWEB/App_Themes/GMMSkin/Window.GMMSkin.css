@@ -1,0 +1,143 @@
+.RadWindow_GMMSkin
+{
+	/*font-family:"Segoe UI",Arial,Helvetica,sans-serif;*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	border: 4px solid #4e4e4e;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow:5px 5px 14px 0px rgba(50, 50, 50, 0.95);
+	-moz-box-shadow: 5px 5px 14px 0px rgba(50, 50, 50, 0.95);
+	box-shadow: 5px 5px 14px 0px rgba(50, 50, 50, 0.95);
+}
+.RadWindow_GMMSkin .rwTopLeft,.RadWindow_GMMSkin .rwTopRight,.RadWindow_GMMSkin .rwTitlebar,.RadWindow_GMMSkin .rwTopResize
+{
+	
+	background:#004c94;
+	/*background-image:-webkit-linear-gradient(top,#0067c7 0,#004c94 100%);
+	background-image:-moz-linear-gradient(top,#0067c7 0,#004c94 100%);
+	background-image:-ms-linear-gradient(top,#0067c7 0,#004c94 100%);
+	background-image:-o-linear-gradient(top,#0067c7 0,#004c94 100%);
+	background-image:linear-gradient(top,#0067c7 0,#004c94 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0067c7',endColorstr='#004c94',GradientType=0);
+	border-color:#004c94;
+	color:white*/
+}
+.RadWindow_GMMSkin .rwFooterLeft,.RadWindow_GMMSkin .rwFooterRight,.RadWindow_GMMSkin .rwFooterCenter,.RadWindow_GMMSkin .rwStatusbar div,.RadWindow_GMMSkin .rwStatusbar,.RadWindow_GMMSkin .rwBodyLeft,.RadWindow_GMMSkin .rwBodyRight,.RadWindow_GMMSkin .rwStatusbarRow .rwCorner
+{
+	background:white;
+}
+.RadWindow_GMMSkin table.rwShadow .rwTopLeft,.RadWindow_GMMSkin table.rwShadow .rwTopRight,.RadWindow_GMMSkin.rwMinimizedWindow table.rwShadow .rwCorner.rwTopLeft,.RadWindow_GMMSkin.rwMinimizedWindow table.rwShadow .rwCorner.rwTopRight,.RadWindow_GMMSkin table.rwShadow .rwBodyLeft,.RadWindow_GMMSkin table.rwShadow .rwBodyRight,.RadWindow_GMMSkin table.rwShadow .rwFooterLeft,.RadWindow_GMMSkin table.rwShadow .rwFooterRight
+{
+	width:7px!important;
+}
+.RadWindow_GMMSkin .rwStatusbarRow .rwBodyLeft,.RadWindow_GMMSkin .rwStatusbarRow .rwStatusbar,.RadWindow_GMMSkin .rwStatusbarRow .rwBodyRight
+{
+	border-top:1px solid #e6e6e6;
+}
+.RadWindow_GMMSkin .rwShadow td.rwFooterLeft,.RadWindow_GMMSkin .rwShadow td.rwFooterRight,.RadWindow_GMMSkin .rwShadow td.rwFooterCenter
+{
+	height:7px;
+}
+.RadWindow_GMMSkin iframe
+{
+	display:block;
+}
+.RadWindow_GMMSkin a.rwIcon
+{
+	background: url('Window/Icon.gif') no-repeat center;
+}
+.RadWindow_GMMSkin ul.rwControlButtons
+{
+	margin:0;
+}
+.RadWindow_GMMSkin .rwControlButtons a
+{
+	/*background-color:#2561d9;*/
+	background: #004c94 url('Window/CommandButtonSprites.gif');
+	width:29px;
+	height:19px;
+	/*border:1px solid #2561d9;*/
+}
+.RadWindow_GMMSkin table.rwTitlebarControls em
+{
+	color:white;
+	font-size:14px;
+	font-weight:normal;
+	padding:1px 0 0 1px;
+	text-transform:none;
+}
+.RadWindow_GMMSkin td.rwStatusbar div
+{
+	background-image:url('Window/rwResize.gif');
+	background-position:10px 8px;
+	background-repeat:no-repeat;
+	margin:0 -4px -7px 0;
+	*margin:0 -1px -4px 0;
+}
+.RadWindow_GMMSkin input.rwDialogInput
+{
+	border:1px solid #cccccc;
+}
+.RadWindow_GMMSkin input.rwDialogInput:hover
+{
+	border:1px solid #757575;
+}
+.RadWindow_GMMSkin table tr td.rwLoading
+{
+	background-color:white;
+}
+.RadWindow_GMMSkin tr td.rwWindowContent.rwLoading
+{
+	background-image:url('Common/loading.gif');
+}
+.RadWindow_GMMSkin input.rwLoading
+{
+	background-image:url('Common/loading_small.gif');
+}
+.RadWindow_GMMSkin .rwDialogPopup a.rwPopupButton
+{
+	background:#fafafa;
+	border:1px solid #cccccc;
+}
+.RadWindow_GMMSkin .rwDialogPopup a.rwPopupButton:hover
+{
+	background:#e8e8e8;
+	border-color:#757575;
+}
+.RadWindow_GMMSkin .rwShadow .rwFooterLeft,.RadWindow_GMMSkin .rwShadow .rwFooterRight,.RadWindow_GMMSkin .rwShadow .rwFooterCenter
+{
+	height:5px;
+}
+.RadWindow_GMMSkin.rwMinimizedWindowShadow .rwFooterRow
+{
+	display:none;
+}
+.RadWindow_GMMSkin.rwMinimizedWindowShadow .rwTable
+{
+	width:200px;
+}
+.RadWindow_GMMSkin .rwShadow a.rwIcon
+{
+	margin:5px 5px 0 0;
+}
+.RadWindow_GMMSkin table.rwShadow em
+{
+	padding:1px 0 0 1px;
+}
+.RadWindow_GMMSkin.rwMinimizedWindow .rwShadow .rwControlButtons
+{
+	margin:2px 0 0 0;
+}
+div.RadWindow_GMMSkin a.rwCancel,div.RadWindow_GMMSkin a.rwCancel span
+{
+	background:none!important;
+	cursor:pointer;
+	border:0!important;
+}
+div.RadWindow_GMMSkin a.rwCancel span span,div.RadWindow_GMMSkin a.rwCancel:hover span span
+{
+	color:black;
+	text-decoration:underline;
+}

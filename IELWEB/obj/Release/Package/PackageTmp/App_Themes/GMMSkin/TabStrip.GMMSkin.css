@@ -1,0 +1,168 @@
+.RadTabStrip_GMMSkin
+{
+    color: black;
+   /* font: 16px "Segoe UI" ,Arial,Helvetica,sans-serif;*/
+    line-height: 26px;
+
+}
+.RadTabStrip_GMMSkin .rtsGhostTab
+{
+    /*border-color: #cccccc;*/
+
+    color: black;
+    background-color: #fafafa;
+	
+	
+}
+.RadTabStrip_GMMSkin
+{
+    color: white;
+    /*font: 100 12px "Segoe UI" ,Arial,Helvetica,sans-serif;*/
+    /*line-height: 1.5;*/
+	
+}
+.RadTabStrip_GMMSkin .rtsDisabled
+{
+    opacity: .5;
+	
+}
+.RadTabStrip_GMMSkin .rtsLink
+{
+    padding: 0 10px !important;
+    color: black;
+		/*border: solid #f0f 1px;*/
+}
+.RadTabStrip_GMMSkin .rtsOut
+{
+    padding: 0 !important;
+	/*border: solid #f0f 1px;*/
+}
+.RadTabStrip_GMMSkin .rtsIn
+{
+	/*border: solid #f0f 1px;*/
+    padding: 0 !important;
+}
+.RadTabStrip_GMMSkin .rtsTxt
+{
+	
+    padding: 0 !important;
+}
+.RadTabStrip_GMMSkin .rtsLevel1 .rtsLink
+{
+    /*margin: 0 0 0 -1px;*/
+		/*border: solid #f0f 1px;*/
+    /*border: 1px solid #cccccc;*/
+    /*background-color: #f0f;*/
+	/*background: #f0f url('TabStrip/panel_fd.png') repeat-x;*/
+	background: url('TabStrip/panel_fd.png') repeat-x;
+}
+.RadTabStrip_GMMSkin .rtsLevel1 .rtsLink:hover
+{
+    /*background-color: #e8e8e8;*/
+	/*background-color: yellow;*/
+	/*border: solid #f0f 1px;*/
+}
+.RadTabStrip_GMMSkin .rtsLevel1 .rtsSelected, .RadTabStrip_GMMSkin .rtsLevel1 .rtsSelected:hover
+{
+    /*border-color: #00529f;*/
+    color: white;
+	/*background: #4cb6e1;*/
+	background: #f4f4f4;
+}
+.RadTabStrip_GMMSkin .rtsLevel1 .rtsFirst .rtsLink
+{
+    margin-left: 0;
+}
+.RadTabStrip_GMMSkin .rtsLevel2
+{
+    padding: 1px;
+    background-color: #00529f;
+}
+.RadTabStrip_GMMSkin .rtsLevel2 .rtsLink
+{
+    /*margin: 0 0 0 1px;*/
+    border: 1px solid #00529f;
+    color: white;
+}
+.RadTabStrip_GMMSkin .rtsLevel2 .rtsLink:hover
+{
+    border-color: white;
+}
+.RadTabStrip_GMMSkin .rtsLevel2 .rtsSelected, .RadTabStrip_GMMSkin .rtsLevel2 .rtsSelected:hover
+{
+    border-color: white;
+}
+.RadTabStrip_GMMSkin .rtsLevel2 .rtsFirst .rtsLink
+{
+    margin-left: 0;
+}
+.RadTabStrip_GMMSkin .rtsNextArrow, .RadTabStrip_GMMSkin .rtsPrevArrow, .RadTabStrip_GMMSkin .rtsPrevArrowDisabled, .RadTabStrip_GMMSkin .rtsNextArrowDisabled
+{
+    width: 28px !important;
+    height: 28px !important;
+    /*border: 1px solid #cccccc !important;*/
+    /*border-radius: 34px !important;*/
+    background-color: #fafafa !important;
+    background-image: url('Common/metrotouch-sprite.png');
+}
+.RadTabStrip_GMMSkin .rtsNextArrow
+{
+    background-position: -11px -161px !important;
+}
+.RadTabStrip_GMMSkin .rtsNextArrowDisabled
+{
+    background-position: -11px -161px !important;
+}
+.RadTabStrip_GMMSkin .rtsPrevArrow
+{
+    background-position: -11px -111px !important;
+}
+.RadTabStrip_GMMSkin .rtsPrevArrowDisabled
+{
+    background-position: -11px -111px !important;
+}
+.RadTabStripTop_GMMSkin .rtsLevel1
+{
+    /*border-bottom: 4px solid #00529f;*/
+	/*border-bottom: 1px solid #4cb6e1;*/
+}
+.RadTabStripTop_GMMSkin .rtsLevel1 .rtsLink
+{
+    border-bottom: 0;
+}
+.RadTabStripBottom_GMMSkin .rtsLevel1
+{
+    border-top: 3px solid #00529f;
+}
+.RadTabStripBottom_GMMSkin .rtsLevel1 .rtsLink
+{
+    border-top: 0;
+}
+.rtsDropClue_GMMSkin
+{
+    width: 16px;
+    height: 16px;
+    background-image: url('Common/metrotouch-sprite.png');
+}
+.rtsDropClueTop_GMMSkin
+{
+    margin-top: -16px;
+    margin-left: -8px;
+    background-position: -17px -67px;
+}
+.rtsDropClueRight_GMMSkin
+{
+    margin-top: -8px;
+    background-position: -17px -117px;
+}
+.rtsDropClueBottom_GMMSkin
+{
+    margin-left: -8px;
+    background-position: -17px -17px;
+}
+.rtsDropClueLeft_GMMSkin
+{
+    margin-top: -8px;
+    margin-left: -16px;
+    background-position: -17px -167px;
+}

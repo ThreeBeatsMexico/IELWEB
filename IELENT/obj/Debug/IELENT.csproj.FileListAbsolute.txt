@@ -1,0 +1,23 @@
+F:\MCQUEEN\IELWEB\IELENT\bin\Debug\IELENT.dll.config
+F:\MCQUEEN\IELWEB\IELENT\bin\Debug\IELENT.dll
+F:\MCQUEEN\IELWEB\IELENT\bin\Debug\IELENT.pdb
+F:\MCQUEEN\IELWEB\IELENT\obj\Debug\IELENT.dll
+F:\MCQUEEN\IELWEB\IELENT\obj\Debug\IELENT.pdb
+C:\Users\JCMARTINEZ\Desktop\IELWEB\IELENT\bin\Debug\IELENT.dll.config
+C:\Users\JCMARTINEZ\Desktop\IELWEB\IELENT\bin\Debug\IELENT.dll
+C:\Users\JCMARTINEZ\Desktop\IELWEB\IELENT\bin\Debug\IELENT.pdb
+C:\Users\JCMARTINEZ\Desktop\IELWEB\IELENT\obj\Debug\IELENT.csprojResolveAssemblyReference.cache
+C:\Users\JCMARTINEZ\Desktop\IELWEB\IELENT\obj\Debug\IELENT.dll
+C:\Users\JCMARTINEZ\Desktop\IELWEB\IELENT\obj\Debug\IELENT.pdb
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELENT\bin\Debug\IELENT.dll.config
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELENT\bin\Debug\IELENT.dll
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELENT\bin\Debug\IELENT.pdb
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELENT\obj\Debug\IELENT.csprojResolveAssemblyReference.cache
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELENT\obj\Debug\IELENT.dll
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELENT\obj\Debug\IELENT.pdb
+H:\PROYECTOS JULIO\IELWEB\IELENT\bin\Debug\IELENT.dll.config
+H:\PROYECTOS JULIO\IELWEB\IELENT\bin\Debug\IELENT.dll
+H:\PROYECTOS JULIO\IELWEB\IELENT\bin\Debug\IELENT.pdb
+H:\PROYECTOS JULIO\IELWEB\IELENT\obj\Debug\IELENT.csproj.CoreCompileInputs.cache
+H:\PROYECTOS JULIO\IELWEB\IELENT\obj\Debug\IELENT.dll
+H:\PROYECTOS JULIO\IELWEB\IELENT\obj\Debug\IELENT.pdb

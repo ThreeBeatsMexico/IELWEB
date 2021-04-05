@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 26, 39.375" name="linqIELDataBase">
+  <DataContextMoniker Name="/linqIELDataBaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0c4b7b9d-d4c1-46ce-a083-b4e156354b17" absoluteBounds="11.75, 23, 2, 8.3091455078125023">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/Alumno" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c2d9e87-d45b-4358-bf0f-f80ab5c8e818" absoluteBounds="11.765, 23.46, 1.9700000000000002, 7.7491455078125009" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="48081d3d-8706-4882-b3d3-9348a714a666" absoluteBounds="0.75, 26, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/WCFSERVICIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ce10068d-0099-485c-b764-bf25c74d0c28" absoluteBounds="0.765, 26.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="64f099ed-5139-4e13-b0db-e3137b1cb64e" absoluteBounds="0.75, 7.5, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/APLICACION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="13a30881-5e81-4f08-91d6-b8946426119c" absoluteBounds="0.765, 7.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e162efe-9fdc-43da-afb8-3508579007bb" absoluteBounds="6.5, 30.625, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/AUDIT_CONTACTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f3c9ded-995f-4acf-b2da-14e776766d4d" absoluteBounds="6.515, 31.085, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f3e27981-31ff-4322-b98e-2a2a53f48130" absoluteBounds="6.5, 34.5, 2, 4.6554182942708309">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/AUDIT_DOMICILIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de378893-4b68-4488-a126-2fb03ddec440" absoluteBounds="6.515, 34.96, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="31604303-bac1-4e60-9b3e-3ff97e2809e2" absoluteBounds="6.5, 0.75, 2, 5.2323225911458326">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/AUDIT_USUARIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5dea0113-ec5a-49b5-b833-2f07b3b74812" absoluteBounds="6.515, 1.21, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d789d0a-11a8-4c97-97f8-7d46710a1c30" absoluteBounds="0.75, 13.375, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/CAT_AREA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8301d4ac-fe5b-487e-afbc-211630c3732f" absoluteBounds="0.765, 13.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="700acd71-0208-4c6a-9cb0-be4f4499f5fc" absoluteBounds="0.75, 23.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/CAT_ESTACIONE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="13fc61da-c5ad-4ec4-aa3c-43afad5d2098" absoluteBounds="0.765, 24.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9bb59db1-c8f9-48b9-a006-8738ec93b0c7" absoluteBounds="0.75, 10.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/CAT_ESTADOCIVIL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5a7c328-ae81-4c8d-87e6-92ec99dc4f2f" absoluteBounds="0.765, 10.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="72cab29e-2768-4467-8277-5edff0ad25c0" absoluteBounds="8.75, 20, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/CAT_GRAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f03590b-e8b8-4aed-80a8-37160ab747f7" absoluteBounds="8.765, 20.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bfd2cee2-a518-4a01-9b24-26dca1346bd2" absoluteBounds="3.75, 31.25, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/CAT_OPERACIONAUDIT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e954b030-8c3e-453e-a2c7-28de1e08b95c" absoluteBounds="3.765, 31.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1e727b15-57c6-42e0-b96a-0ad3d5bba811" absoluteBounds="0.75, 16.375, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/CAT_SEXO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="85181209-cac2-4407-a33e-0db89a630083" absoluteBounds="0.765, 16.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="855cdd99-a1b8-4120-b503-9963ae5d9f2f" absoluteBounds="3.5, 17.375, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/CAT_TIPOCONTACTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69707220-f7c7-490a-a257-f75075ea02fb" absoluteBounds="3.515, 17.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0c35102b-e150-4503-9803-9f82051c9fe3" absoluteBounds="0.75, 18.5, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/CAT_TIPOPERSONA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="274d7a4a-e448-4e57-ad95-959f187490b2" absoluteBounds="0.765, 18.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="be92efcf-4ddb-47d2-80b1-2edbdddcc735" absoluteBounds="0.75, 20.625, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/CAT_TIPOUSUARIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b108ee6a-e64e-433b-933d-b5fa0f2b65ee" absoluteBounds="0.765, 21.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2bae840f-488e-4758-9baa-0452a3b334e1" absoluteBounds="14.75, 12.5, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/Categoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d964c2b-bf49-43d3-a2e4-f1fd5fa6fbf4" absoluteBounds="14.765, 12.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66f08ae0-de94-44e5-925b-c669a095c4d8" absoluteBounds="14.75, 23, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/CATGENERALE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cfb09333-27b3-454d-beea-03b7d22af87c" absoluteBounds="14.765, 23.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="742eb44a-6648-478c-beb2-6e79ae4cc138" absoluteBounds="16.75, 15, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/Ciclo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="df8a08ce-1f40-4a18-96c0-1a177e5fa6a7" absoluteBounds="16.765, 15.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a8da1fb3-81dc-4324-954e-8373728c576a" absoluteBounds="16.75, 18, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/cliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="041e8e21-9298-4996-90b9-1eb7e9e2015b" absoluteBounds="16.765, 18.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="39a94a11-d9fa-44ff-b741-9e88e594db10" absoluteBounds="17.5, 11.125, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/Comentario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e6177cfd-1482-4182-8872-0b22d75adb09" absoluteBounds="17.515, 11.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d7780863-d247-465e-b520-19159d9c3036" absoluteBounds="17.75, 22, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/CONFIGAPP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="11f6db28-f9c0-464c-be81-cf89558841b7" absoluteBounds="17.765, 22.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="644ddb26-6a61-4824-be9d-c025915c46b0" absoluteBounds="6.25, 16.125, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/CONTACTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87a795be-53b0-428d-b74c-9d0862886360" absoluteBounds="6.265, 16.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="99552683-f9cc-4cfb-9f5a-964edea0b954" absoluteBounds="6.25, 19.875, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/DOMICILIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d15a73b-2233-482c-b579-66c7e512dde7" absoluteBounds="6.265, 20.335, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b688e5d-a139-462c-8d5a-8383e0557287" absoluteBounds="17.75, 25, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/empresa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6abfdf77-25a9-496c-a493-62b9efc0d2dd" absoluteBounds="17.765, 25.46, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c79886b1-fdcd-4d9a-bcd1-6bf25c0aeb8c" absoluteBounds="3.5, 23.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/ESTACIONESXAPP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e935ad22-96ee-4b79-9a67-cc2276411646" absoluteBounds="3.515, 24.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eae3fc71-54f8-4bc2-b477-9eaf30e59098" absoluteBounds="19.75, 14, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/Formato" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d368ad0a-5784-4852-93c7-3c8e9f45c7b4" absoluteBounds="19.765, 14.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aa008e63-bc3c-487d-9187-da9e5fa663a4" absoluteBounds="19.75, 17, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/Grado" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4f65cff-bdbc-4e7e-8b4b-9fa4b691cb87" absoluteBounds="19.765, 17.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c2badc1d-9618-44f0-8489-9a3b84e4252f" absoluteBounds="20.75, 8, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/Grupo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="397b2499-20af-4ed6-94f7-5d0bd9a2a65c" absoluteBounds="20.765, 8.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aaa4a836-f30b-4070-b507-9c170cc6ded2" absoluteBounds="20.75, 20, 2, 9.6552555338541666">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/InfoAlumno" />
+      <nestedChildShapes>
+        <elementListCompartment Id="caa6d868-ee31-413b-9a6b-40cf8eb3fede" absoluteBounds="20.765, 20.46, 1.9700000000000002, 9.0952555338541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3db9f995-de44-4c42-b67f-dd3971b43390" absoluteBounds="3.5, 26.375, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/LOGERROR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d7f80ff9-122c-480a-8f02-f06b66b9eacd" absoluteBounds="3.515, 26.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="95fda142-2d7c-45b6-aa65-dd69139b16cd" absoluteBounds="22.75, 11, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/numeracion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="04fe526a-148c-479e-8c09-333fffa1906a" absoluteBounds="22.765, 11.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8546cd76-bc5b-45f7-913a-75c477a9c2a9" absoluteBounds="22.75, 15, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/Numeracione" />
+      <nestedChildShapes>
+        <elementListCompartment Id="90511786-0644-4a7d-866b-8e6023ac0516" absoluteBounds="22.765, 15.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e6e2c4ae-1a6a-4b06-8cef-095c7e3c295b" absoluteBounds="14.75, 30, 2, 4.0785139973958273">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/PagosAlumno" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e2c1df52-319e-4db1-bac4-7b62a5df84e8" absoluteBounds="14.765, 30.46, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46c8574f-da25-4411-ac87-ddaff349f95a" absoluteBounds="9, 10.5, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/PERMISOSXELEMENTOSOBJETO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b4e42f4-4939-4733-ba2b-6e042a60a956" absoluteBounds="9.015, 10.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="59eefbbe-d979-4203-94ef-783c71336381" absoluteBounds="6.25, 24.75, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/PERMISOSXMENU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f2e7ca77-d501-4ee6-b833-f161e84f2e09" absoluteBounds="6.265, 25.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0656ed9a-bca1-41e7-90a4-0dada27d48a5" absoluteBounds="9, 24.75, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/PERMISOSXSUBMENU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d7382018-8219-48d1-9454-66024684d77e" absoluteBounds="9.015, 25.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3548e97a-b6f2-4d87-9920-859945d3b166" absoluteBounds="6.25, 6.875, 2, 2.1554996744791657">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/PERMISOXOBJETO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="50875857-a034-428a-b5d9-5261e8d1edee" absoluteBounds="6.265, 7.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d3b911cf-9f1f-4c12-a33e-2b5126cbb821" absoluteBounds="14.75, 8.875, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/Post" />
+      <nestedChildShapes>
+        <elementListCompartment Id="688b4ddd-c638-4cb9-aede-fc9943476db3" absoluteBounds="14.765, 9.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c6e4e4c-4269-4b1c-b16b-600af11b6a5c" absoluteBounds="17.5, 8.625, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/PostCategoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fc0f0f7e-871c-4463-9b93-84684c423261" absoluteBounds="17.515, 9.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="efa5ab59-43cb-4bf7-87c2-0a4de5ef5018" absoluteBounds="11.5, 16.25, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/producto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7e8a647-e330-4627-8a57-030b3d103e24" absoluteBounds="11.515, 16.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="482c0b48-0b5c-4a69-98f5-23d21d674e8a" absoluteBounds="3.5, 7.125, 2, 1.5785953776041657">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/ROLE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6fd09f92-4d29-4517-845f-0c71f61b6de4" absoluteBounds="3.515, 7.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="01dda038-799a-4251-bffe-799b73c1abc7" absoluteBounds="6.25, 10.25, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/ROLESXUSUARIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="33976ed2-1d2e-405a-bbce-9f4415c94bfb" absoluteBounds="6.265, 10.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="773321f5-7b26-4a28-b5dc-3e21f2366166" absoluteBounds="23.75, 18, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/tbl_chatMessage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf38c2d0-98e4-4258-9441-2dda06939431" absoluteBounds="23.765, 18.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="649cb016-69b3-4079-aae0-8911b3be744d" absoluteBounds="23.75, 22, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/tbl_userStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2376a402-414a-40d8-8bfa-e42534d80891" absoluteBounds="23.765, 22.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="32e15999-1d1f-4083-bd6f-106f7a5a3a0f" absoluteBounds="23.75, 8, 2, 1.5785953776041675">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/TpoProy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ce04dec-e8e7-420c-b65c-d5ec49c3c456" absoluteBounds="23.765, 8.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="21476baf-fa77-4545-b2f6-893cdfafeada" absoluteBounds="17.75, 31, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/Transaccione" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9f47dacb-fd31-4fb4-9fb5-cea8b79b3009" absoluteBounds="17.765, 31.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="57a53c37-2a0a-43fc-b8f4-c5ccf26ecac4" absoluteBounds="8.75, 16.625, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/unidad_medida" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d7a21587-bdc4-4710-90b7-fb508defeee3" absoluteBounds="8.765, 17.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="28df36a7-449b-4645-b31a-8d1516c91ac9" absoluteBounds="23.75, 26, 2, 4.6554182942708309">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8027692f-df6c-4f45-946d-954d2e9feb1e" absoluteBounds="23.765, 26.46, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7cd4aad3-94b9-430d-ba7f-ac018d197325" absoluteBounds="3.5, 12.125, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/USUARIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="085e6666-8226-4097-b100-44cbc93b0269" absoluteBounds="3.515, 12.585, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f27358c-64dc-43db-9083-5d0c7869ff9e" absoluteBounds="6.25, 13.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/USUARIOXAPLICACION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1018caac-fa07-49f6-b661-c8090c38a576" absoluteBounds="6.265, 13.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2670c56c-d14a-42fd-a4a8-03db088482cc" absoluteBounds="11.5, 4.875, 2, 4.8477197265625005">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/venta" />
+      <nestedChildShapes>
+        <elementListCompartment Id="38962aae-c7ed-4206-b6ec-75fd53d35718" absoluteBounds="11.515, 5.335, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c8c8e755-de62-4abc-bb4e-9e9a0dd21843" absoluteBounds="14.25, 16, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/venta_detalle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8b0125b-1f83-4d69-a323-9e0544535e44" absoluteBounds="14.265, 16.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="784f1c32-ef56-4004-b708-53e6abb31ce3" absoluteBounds="14.25, 19.25, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/venta_detalle_tmp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8f7c703e-ac08-4984-8421-91818ad936d4" absoluteBounds="14.265, 19.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cdce3829-14b4-4175-8318-c1a4bb85aea2" absoluteBounds="3.5, 4.375, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/WCFMETODO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15c315ab-cefd-4b96-8772-dfd558b2d014" absoluteBounds="3.515, 4.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="11c99917-73df-40c6-b346-72ddda519c7c" absoluteBounds="6.25, 28.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/linqIELDataBaseDataContext/WCFRECURRENCIA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0d2a519a-69d2-4aba-9d77-e6af06d57d10" absoluteBounds="6.265, 28.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 7.5); (1.75 : 2.53125); (6.5 : 2.53125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/APLICACION/APLICACION_AUDIT_USUARIO" />
+      <nodes>
+        <classShapeMoniker Id="64f099ed-5139-4e13-b0db-e3137b1cb64e" />
+        <classShapeMoniker Id="31604303-bac1-4e60-9b3e-3ff97e2809e2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 31.9431469726563); (6.5 : 31.9431469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/CAT_OPERACIONAUDIT/CAT_OPERACIONAUDIT_AUDIT_CONTACTO" />
+      <nodes>
+        <classShapeMoniker Id="bfd2cee2-a518-4a01-9b24-26dca1346bd2" />
+        <classShapeMoniker Id="7e162efe-9fdc-43da-afb8-3508579007bb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.75 : 32.6362939453125); (4.75 : 36.8277091471354); (6.5 : 36.8277091471354)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/CAT_OPERACIONAUDIT/CAT_OPERACIONAUDIT_AUDIT_DOMICILIO" />
+      <nodes>
+        <classShapeMoniker Id="bfd2cee2-a518-4a01-9b24-26dca1346bd2" />
+        <classShapeMoniker Id="f3e27981-31ff-4322-b98e-2a2a53f48130" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.65625 : 31.25); (5.65625 : 3.4531275); (6.5 : 3.4531275)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/CAT_OPERACIONAUDIT/CAT_OPERACIONAUDIT_AUDIT_USUARIO" />
+      <nodes>
+        <classShapeMoniker Id="bfd2cee2-a518-4a01-9b24-26dca1346bd2" />
+        <classShapeMoniker Id="31604303-bac1-4e60-9b3e-3ff97e2809e2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 17.7315991210938); (5.57291666666667 : 17.7315991210938 : JumpStart); (5.73958333333333 : 17.7315991210938 : JumpEnd); (5.79166666666667 : 17.7315991210938 : JumpStart); (6.23958333333333 : 17.7315991210938 : JumpEnd); (6.25 : 17.7315991210938)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/CAT_TIPOCONTACTO/CAT_TIPOCONTACTO_CONTACTO" />
+      <nodes>
+        <classShapeMoniker Id="855cdd99-a1b8-4120-b503-9963ae5d9f2f" />
+        <classShapeMoniker Id="644ddb26-6a61-4824-be9d-c025915c46b0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 24.4431469726563); (3.04166666666667 : 24.4431469726563 : JumpStart); (3.20833333333333 : 24.4431469726563 : JumpEnd); (3.32291666666667 : 24.4431469726563 : JumpStart); (3.48958333333333 : 24.4431469726563 : JumpEnd); (3.5 : 24.4431469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/CAT_ESTACIONE/CAT_ESTACIONE_ESTACIONESXAPP" />
+      <nodes>
+        <classShapeMoniker Id="700acd71-0208-4c6a-9cb0-be4f4499f5fc" />
+        <classShapeMoniker Id="c79886b1-fdcd-4d9a-bcd1-6bf25c0aeb8c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.27089680989583); (3.28125 : 9.80214680989583); (3.28125 : 24.0028214863281); (3.32291666666667 : 24.0028214863281 : JumpStart); (3.48958333333333 : 24.0028214863281 : JumpEnd); (3.5 : 24.0028214863281)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/APLICACION/APLICACION_ESTACIONESXAPP" />
+      <nodes>
+        <classShapeMoniker Id="64f099ed-5139-4e13-b0db-e3137b1cb64e" />
+        <classShapeMoniker Id="c79886b1-fdcd-4d9a-bcd1-6bf25c0aeb8c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.70640869391026 : 9.27089680989583); (3.125 : 9.68948811598558); (3.125 : 27.6450512695313); (3.5 : 27.6450512695313)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/APLICACION/APLICACION_LOGERROR" />
+      <nodes>
+        <classShapeMoniker Id="64f099ed-5139-4e13-b0db-e3137b1cb64e" />
+        <classShapeMoniker Id="3db9f995-de44-4c42-b67f-dd3971b43390" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 26.0200512695313); (9 : 26.0200512695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/PERMISOSXMENU/PERMISOSXMENU_PERMISOSXSUBMENU" />
+      <nodes>
+        <classShapeMoniker Id="59eefbbe-d979-4203-94ef-783c71336381" />
+        <classShapeMoniker Id="0656ed9a-bca1-41e7-90a4-0dada27d48a5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 7.95274983723958); (10 : 7.95274983723958); (10 : 10.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/PERMISOXOBJETO/PERMISOXOBJETO_PERMISOSXELEMENTOSOBJETO" />
+      <nodes>
+        <classShapeMoniker Id="3548e97a-b6f2-4d87-9920-859945d3b166" />
+        <classShapeMoniker Id="46c8574f-da25-4411-ac87-ddaff349f95a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 11.4151025390625); (17.125 : 11.7901025390625); (17.125 : 10.75); (17.2535744349011 : 10.8785744349011 : JumpStart); (17.3714255650989 : 10.9964255650989 : JumpEnd); (17.5 : 11.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/Post/Post_Comentario" />
+      <nodes>
+        <classShapeMoniker Id="d3b911cf-9f1f-4c12-a33e-2b5126cbb821" />
+        <classShapeMoniker Id="39a94a11-d9fa-44ff-b741-9e88e594db10" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 12.5618490375601); (17.3125 : 11.9993490375601); (17.3125 : 9.22199625651042); (17.5 : 9.22199625651042)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/Categoria/Categoria_PostCategoria" />
+      <nodes>
+        <classShapeMoniker Id="2bae840f-488e-4758-9baa-0452a3b334e1" />
+        <classShapeMoniker Id="6c6e4e4c-4269-4b1c-b16b-600af11b6a5c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 9.58299438476562); (17.2291666666667 : 9.58299438476562 : JumpStart); (17.3958333333333 : 9.58299438476562 : JumpEnd); (17.5 : 9.58299438476562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/Post/Post_PostCategoria" />
+      <nodes>
+        <classShapeMoniker Id="d3b911cf-9f1f-4c12-a33e-2b5126cbb821" />
+        <classShapeMoniker Id="6c6e4e4c-4269-4b1c-b16b-600af11b6a5c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.70359537760417); (5.59732443490112 : 8.80091981250529 : JumpStart); (5.71517556509888 : 8.91877094270304 : JumpEnd); (5.875 : 9.07859537760417); (5.875 : 26.0200512695313); (6.07291666666667 : 26.0200512695313 : JumpStart); (6.23958333333333 : 26.0200512695313 : JumpEnd); (6.25 : 26.0200512695313)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/ROLE/ROLE_PERMISOSXMENU" />
+      <nodes>
+        <classShapeMoniker Id="482c0b48-0b5c-4a69-98f5-23d21d674e8a" />
+        <classShapeMoniker Id="59eefbbe-d979-4203-94ef-783c71336381" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.88304518880208); (5.57291666666667 : 7.88304518880208 : JumpStart); (5.73958333333333 : 7.88304518880208 : JumpEnd); (6.07291666666667 : 7.88304518880208 : JumpStart); (6.23958333333333 : 7.88304518880208 : JumpEnd); (6.25 : 7.88304518880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/ROLE/ROLE_PERMISOXOBJETO" />
+      <nodes>
+        <classShapeMoniker Id="482c0b48-0b5c-4a69-98f5-23d21d674e8a" />
+        <classShapeMoniker Id="3548e97a-b6f2-4d87-9920-859945d3b166" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.10179768880208); (3.32291666666667 : 8.10179768880208 : JumpStart); (3.48958333333333 : 8.10179768880208 : JumpEnd); (3.5 : 8.10179768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/APLICACION/APLICACION_ROLE" />
+      <nodes>
+        <classShapeMoniker Id="64f099ed-5139-4e13-b0db-e3137b1cb64e" />
+        <classShapeMoniker Id="482c0b48-0b5c-4a69-98f5-23d21d674e8a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.4687475 : 8.70359537760417); (4.4687475 : 11.1354484049479); (4.90104041666667 : 11.1354484049479 : JumpStart); (5.06770708333333 : 11.1354484049479 : JumpEnd); (5.57291666666667 : 11.1354484049479 : JumpStart); (5.73958333333333 : 11.1354484049479 : JumpEnd); (5.79166666666667 : 11.1354484049479 : JumpStart); (6.02083333333333 : 11.1354484049479 : JumpEnd); (6.07291666666667 : 11.1354484049479 : JumpStart); (6.23958333333333 : 11.1354484049479 : JumpEnd); (6.25 : 11.1354484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/ROLE/ROLE_ROLESXUSUARIO" />
+      <nodes>
+        <classShapeMoniker Id="482c0b48-0b5c-4a69-98f5-23d21d674e8a" />
+        <classShapeMoniker Id="01dda038-799a-4251-bffe-799b73c1abc7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 23.6869285109675); (5.59732443490112 : 23.5896040760664 : JumpStart); (5.71517556509888 : 23.4717529458687 : JumpEnd); (5.81607443490112 : 23.3708540760664 : JumpStart); (5.93392556509888 : 23.2530029458687 : JumpEnd); (6.0625 : 23.1244285109675); (6.0625 : 11.6094246074219); (6.07291666666667 : 11.6094246074219 : JumpStart); (6.23958333333333 : 11.6094246074219 : JumpEnd); (6.25 : 11.6094246074219)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/ESTACIONESXAPP/ESTACIONESXAPP_ROLESXUSUARIO" />
+      <nodes>
+        <classShapeMoniker Id="c79886b1-fdcd-4d9a-bcd1-6bf25c0aeb8c" />
+        <classShapeMoniker Id="01dda038-799a-4251-bffe-799b73c1abc7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 17.2219962565104); (11.5 : 17.2219962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/unidad_medida/unidad_medida_producto" />
+      <nodes>
+        <classShapeMoniker Id="57a53c37-2a0a-43fc-b8f4-c5ccf26ecac4" />
+        <classShapeMoniker Id="efa5ab59-43cb-4bf7-87c2-0a4de5ef5018" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 15.9158269497196); (5.59732443490112 : 16.0131513846207 : JumpStart); (5.71517556509888 : 16.1310025148184 : JumpEnd); (5.81607443490112 : 16.2319013846207 : JumpStart); (5.93392556509888 : 16.3497525148184 : JumpEnd); (6 : 16.4158269497196); (6 : 15.873490847506); (6.00357443490112 : 15.8770652824071 : JumpStart); (6.21517556509888 : 16.0886664126049 : JumpEnd); (6.25150915249399 : 16.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/USUARIO/USUARIO_CONTACTO" />
+      <nodes>
+        <classShapeMoniker Id="7cd4aad3-94b9-430d-ba7f-ac018d197325" />
+        <classShapeMoniker Id="644ddb26-6a61-4824-be9d-c025915c46b0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 15.9819807958734); (5.59732443490112 : 16.0793052307745 : JumpStart); (5.71517556509888 : 16.1971563609723 : JumpEnd); (5.81607443490112 : 16.2980552307745 : JumpStart); (5.93392556509888 : 16.4159063609723 : JumpEnd); (5.9375 : 16.4194807958734); (5.9375 : 21.6258048502604); (5.97916666666667 : 21.6258048502604 : JumpStart); (6.23958333333333 : 21.6258048502604 : JumpEnd); (6.25 : 21.6258048502604)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/USUARIO/USUARIO_DOMICILIO" />
+      <nodes>
+        <classShapeMoniker Id="7cd4aad3-94b9-430d-ba7f-ac018d197325" />
+        <classShapeMoniker Id="99552683-f9cc-4cfb-9f5a-964edea0b954" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.98437375 : 12.125); (4.98437375 : 10.661471702474); (5.57291666666667 : 10.661471702474 : JumpStart); (5.73958333333333 : 10.661471702474 : JumpEnd); (5.79166666666667 : 10.661471702474 : JumpStart); (6.02083333333333 : 10.661471702474 : JumpEnd); (6.07291666666667 : 10.661471702474 : JumpStart); (6.23958333333333 : 10.661471702474 : JumpEnd); (6.25 : 10.661471702474)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/USUARIO/USUARIO_ROLESXUSUARIO" />
+      <nodes>
+        <classShapeMoniker Id="7cd4aad3-94b9-430d-ba7f-ac018d197325" />
+        <classShapeMoniker Id="01dda038-799a-4251-bffe-799b73c1abc7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 14.0681469726563); (3.04166666666667 : 14.0681469726562 : JumpStart); (3.48958333333333 : 14.0681469726563 : JumpEnd); (3.5 : 14.0681469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/CAT_AREA/CAT_AREA_USUARIO" />
+      <nodes>
+        <classShapeMoniker Id="4d789d0a-11a8-4c97-97f8-7d46710a1c30" />
+        <classShapeMoniker Id="7cd4aad3-94b9-430d-ba7f-ac018d197325" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 11.3858711751302); (3.04166666666667 : 11.3858711751302 : JumpStart); (3.48958333333333 : 11.3858711751302 : JumpEnd); (3.98437375 : 11.3858711751302); (3.98437375 : 12.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/CAT_ESTADOCIVIL/CAT_ESTADOCIVIL_USUARIO" />
+      <nodes>
+        <classShapeMoniker Id="9bb59db1-c8f9-48b9-a006-8738ec93b0c7" />
+        <classShapeMoniker Id="7cd4aad3-94b9-430d-ba7f-ac018d197325" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 16.4368490375601); (2.9375 : 16.2493490375601); (2.9375 : 16.5752500266426); (3.06607443490112 : 16.4466755917415 : JumpStart); (3.46517556509888 : 16.0475744615438 : JumpEnd); (3.50153746153846 : 16.0112125651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/CAT_SEXO/CAT_SEXO_USUARIO" />
+      <nodes>
+        <classShapeMoniker Id="1e727b15-57c6-42e0-b96a-0ad3d5bba811" />
+        <classShapeMoniker Id="7cd4aad3-94b9-430d-ba7f-ac018d197325" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 18.5618490375601); (3.06607443490112 : 18.245774602659 : JumpStart); (3.18392556509888 : 18.1279234724612 : JumpEnd); (3.1875 : 18.1243490375601); (3.1875 : 13.0653214863281); (3.19791666666667 : 13.0653214863281 : JumpStart); (3.48958333333333 : 13.0653214863281 : JumpEnd); (3.5 : 13.0653214863281)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/CAT_TIPOPERSONA/CAT_TIPOPERSONA_USUARIO" />
+      <nodes>
+        <classShapeMoniker Id="0c35102b-e150-4503-9803-9f82051c9fe3" />
+        <classShapeMoniker Id="7cd4aad3-94b9-430d-ba7f-ac018d197325" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 20.65592401878); (3.06607443490112 : 20.3398495838789 : JumpStart); (3.18392556509888 : 20.2219984536812 : JumpEnd); (3.22232443490112 : 20.1835995838789 : JumpStart); (3.34017556509888 : 20.0657484536812 : JumpEnd); (3.34375 : 20.06217401878); (3.34375 : 15.0709317688802); (3.5 : 15.0709317688802)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/CAT_TIPOUSUARIO/CAT_TIPOUSUARIO_USUARIO" />
+      <nodes>
+        <classShapeMoniker Id="be92efcf-4ddb-47d2-80b1-2edbdddcc735" />
+        <classShapeMoniker Id="7cd4aad3-94b9-430d-ba7f-ac018d197325" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.22730450380609); (3.16859230608974 : 9.64589680989583); (3.32291666666667 : 9.64589680989583 : JumpStart); (3.48958333333333 : 9.64589680989583 : JumpEnd); (4.38541416666667 : 9.64589680989583 : JumpStart); (4.55208083333333 : 9.64589680989583 : JumpEnd); (5.57291666666667 : 9.64589680989583 : JumpStart); (5.73958333333333 : 9.64589680989583 : JumpEnd); (5.9375 : 9.64589680989583); (5.9375 : 13.0625); (6.00357443490112 : 13.1285744349011 : JumpStart); (6.21517556509888 : 13.3401755650989 : JumpEnd); (6.25 : 13.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/APLICACION/APLICACION_USUARIOXAPLICACION" />
+      <nodes>
+        <classShapeMoniker Id="64f099ed-5139-4e13-b0db-e3137b1cb64e" />
+        <classShapeMoniker Id="7f27358c-64dc-43db-9083-5d0c7869ff9e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 14.1955501888021); (5.57291666666667 : 14.1955501888021 : JumpStart); (5.73958333333333 : 14.1955501888021 : JumpEnd); (5.79166666666667 : 14.1955501888021 : JumpStart); (5.95833333333333 : 14.1955501888021 : JumpEnd); (5.97916666666667 : 14.1955501888021 : JumpStart); (6.23958333333333 : 14.1955501888021 : JumpEnd); (6.25 : 14.1955501888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/USUARIO/USUARIO_USUARIOXAPLICACION" />
+      <nodes>
+        <classShapeMoniker Id="7cd4aad3-94b9-430d-ba7f-ac018d197325" />
+        <classShapeMoniker Id="7f27358c-64dc-43db-9083-5d0c7869ff9e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.5 : 17.2315991210938); (14.25 : 17.2315991210938)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/producto/producto_venta_detalle" />
+      <nodes>
+        <classShapeMoniker Id="efa5ab59-43cb-4bf7-87c2-0a4de5ef5018" />
+        <classShapeMoniker Id="c8c8e755-de62-4abc-bb4e-9e9a0dd21843" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.5 : 6.84375); (14.46875 : 6.84375); (14.46875 : 16)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/venta/venta_venta_detalle" />
+      <nodes>
+        <classShapeMoniker Id="2670c56c-d14a-42fd-a4a8-03db088482cc" />
+        <classShapeMoniker Id="c8c8e755-de62-4abc-bb4e-9e9a0dd21843" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.5 : 18.2131982421875); (12.5 : 20.5200512695313); (14.25 : 20.5200512695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/producto/producto_venta_detalle_tmp" />
+      <nodes>
+        <classShapeMoniker Id="efa5ab59-43cb-4bf7-87c2-0a4de5ef5018" />
+        <classShapeMoniker Id="784f1c32-ef56-4004-b708-53e6abb31ce3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 7.5); (2.2812525 : 5.35659912109375); (3.5 : 5.35659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/APLICACION/APLICACION_WCFMETODO" />
+      <nodes>
+        <classShapeMoniker Id="64f099ed-5139-4e13-b0db-e3137b1cb64e" />
+        <classShapeMoniker Id="cdce3829-14b4-4175-8318-c1a4bb85aea2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 26.03092401878); (3.06607443490112 : 25.7148495838789 : JumpStart); (3.18392556509888 : 25.5969984536812 : JumpEnd); (3.40625 : 25.37467401878); (3.40625 : 5.87865068164063); (3.5 : 5.87865068164063)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/WCFSERVICIO/WCFSERVICIO_WCFMETODO" />
+      <nodes>
+        <classShapeMoniker Id="48081d3d-8706-4882-b3d3-9348a714a666" />
+        <classShapeMoniker Id="cdce3829-14b4-4175-8318-c1a4bb85aea2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.30799419230769); (5.59732443490112 : 6.40531862720881 : JumpStart); (5.71517556509888 : 6.52316975740657 : JumpEnd); (6.15625 : 6.96424419230769); (6.15625 : 28.9142976888021); (6.25 : 28.9142976888021)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqIELDataBaseDataContext/WCFMETODO/WCFMETODO_WCFRECURRENCIA" />
+      <nodes>
+        <classShapeMoniker Id="cdce3829-14b4-4175-8318-c1a4bb85aea2" />
+        <classShapeMoniker Id="11c99917-73df-40c6-b346-72ddda519c7c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

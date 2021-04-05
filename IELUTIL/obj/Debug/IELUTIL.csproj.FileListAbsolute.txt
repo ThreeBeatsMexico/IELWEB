@@ -1,0 +1,10 @@
+F:\MCQUEEN\IELWEB\IELUTIL\bin\Debug\IELUTIL.dll
+F:\MCQUEEN\IELWEB\IELUTIL\bin\Debug\IELUTIL.pdb
+F:\MCQUEEN\IELWEB\IELUTIL\obj\Debug\IELUTIL.csprojResolveAssemblyReference.cache
+F:\MCQUEEN\IELWEB\IELUTIL\obj\Debug\IELUTIL.dll
+F:\MCQUEEN\IELWEB\IELUTIL\obj\Debug\IELUTIL.pdb
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELUTIL\bin\Debug\IELUTIL.dll
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELUTIL\bin\Debug\IELUTIL.pdb
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELUTIL\obj\Debug\IELUTIL.csprojResolveAssemblyReference.cache
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELUTIL\obj\Debug\IELUTIL.dll
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELUTIL\obj\Debug\IELUTIL.pdb

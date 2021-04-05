@@ -1,0 +1,278 @@
+.RadWindow_IELSkin {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede;
+    border-radius: 4px;
+}
+
+    .RadWindow_IELSkin.rwShadow {
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+        .RadWindow_IELSkin.rwShadow .rwTopResize {
+            height: 6px;
+        }
+
+    .RadWindow_IELSkin .rwTitleRow .rwCorner, .RadWindow_IELSkin .rwTitleRow .rwTitlebar {
+        background-color: #f5f5f5;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #dedede;
+    }
+
+    .RadWindow_IELSkin.rwNoTitleBar .rwTitleRow .rwCorner, .RadWindow_IELSkin.rwNoTitleBar .rwTitleRow .rwTitlebar {
+        background-color: transparent;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: transparent;
+    }
+
+    .RadWindow_IELSkin .rwTitleRow .rwTopLeft {
+        border-radius: 4px 0 0;
+    }
+
+    .RadWindow_IELSkin .rwTitleRow .rwTopRight {
+        border-radius: 0 4px 0 0;
+    }
+
+    .RadWindow_IELSkin .rwTitlebarControls {
+        height: 34px;
+        *height: 36px;
+    }
+
+    .RadWindow_IELSkin.rwShadow .rwTitlebarControls {
+        height: 28px;
+    }
+
+    .RadWindow_IELSkin .rwTitlebarControls em {
+        font-size: 16px;
+    }
+
+    .RadWindow_IELSkin .rwControlButtons li a {
+        width: 32px;
+        height: 32px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: transparent;
+    }
+
+        .RadWindow_IELSkin .rwControlButtons li a:hover {
+            background-color: #ebebeb;
+            border-color: #adadad;
+            border-radius: 3px;
+        }
+
+    .RadWindow_IELSkin table.rwShadow em {
+        padding: 0 0 0 1px;
+    }
+
+    .RadWindow_IELSkin .rwStatusbar input {
+        background-color: #ffffff;
+    }
+
+    .RadWindow_IELSkin .rwStatusbar div {
+        background-image: url('Common/radActionsSprite.png');
+        background-position: -12px -2212px;
+        margin: 6px -3px 0 0;
+    }
+
+    .RadWindow_IELSkin.rwShadow .rwStatusbar div {
+        margin: 9px -9px 0 0;
+    }
+
+    .RadWindow_IELSkin .rwTable .rwTitlebarControls .rwIcon {
+        background-image: url('Common/radActionsSprite.png');
+        background-position: -67px -1619px;
+        margin: 8px 5px 0 0;
+    }
+
+    .RadWindow_IELSkin .rwTable.rwShadow .rwTitlebarControls .rwIcon {
+        margin: 5px 5px 0 0;
+    }
+
+    .RadWindow_IELSkin .rwTable .rwTitlebarControls em {
+        color: #333333;
+        font-weight: normal;
+    }
+
+    .RadWindow_IELSkin .rwTable .rwDialogInput, .RadWindow_IELSkin .rwTable .rwDialogInput:hover {
+        height: 1.5em;
+        padding: .42857143em .85714286em;
+        background-color: #ffffff;
+        color: #545454;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #dedede;
+    }
+
+        .RadWindow_IELSkin .rwTable .rwDialogInput:focus {
+            background-color: #ffffff;
+            color: #545454;
+            border-color: #00bef2;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset,0 0 8px rgba(102,175,233,0.6);
+            outline: 0 none;
+        }
+
+        .RadWindow_IELSkin .rwTable .rwDialogInput:active {
+            background-color: #ffffff;
+            color: #545454;
+            border-color: #dedede;
+        }
+
+    .RadWindow_IELSkin td.rwWindowContent {
+        background-color: #ffffff;
+        color: #333333;
+    }
+
+    .RadWindow_IELSkin .rwTable tr td.rwLoading {
+        background-color: #ffffff;
+    }
+
+    .RadWindow_IELSkin td.rwWindowContent.rwLoading, .RadWindow_IELSkin .rwIframeWrapperIOS.rwLoading {
+        background-image: url('Common/loading.gif');
+    }
+
+    .RadWindow_IELSkin input.rwLoading {
+        background-image: url('Common/loading_small.gif');
+    }
+
+    .RadWindow_IELSkin .rwTable a.rwCancel, .RadWindow_IELSkin .rwTable a.rwCancel span {
+        background: 0;
+        cursor: pointer;
+    }
+
+        .RadWindow_IELSkin .rwTable a.rwCancel span span {
+            color: #333333;
+            text-decoration: underline;
+        }
+
+    .RadWindow_IELSkin .rwControlButtons {
+        margin: -2px 0 0;
+        *margin: 0;
+    }
+
+    .RadWindow_IELSkin.rwShadow .rwControlButtons {
+        margin: -4px 0 0;
+    }
+
+    .RadWindow_IELSkin .rwTable .rwControlButtons li a {
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin: 0 0 0 8px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: transparent;
+        background-image: url('Common/radActionsSprite.png');
+    }
+
+        .RadWindow_IELSkin .rwTable .rwControlButtons li a:hover {
+            background-color: #ebebeb;
+            border-color: #adadad;
+            border-radius: 3px;
+        }
+
+    .RadWindow_IELSkin .rwCloseButton, .RadWindow_IELSkin .rwCloseButton:hover {
+        background-position: -61px -1909px !important;
+    }
+
+    .RadWindow_IELSkin .rwPinButton, .RadWindow_IELSkin .rwPinButton:hover {
+        background-position: -61px -1259px;
+    }
+
+        .RadWindow_IELSkin .rwPinButton.on, .RadWindow_IELSkin .rwPinButton.on:hover {
+            background-position: -9px -1209px;
+        }
+
+    .RadWindow_IELSkin .rwMinimizeButton, .RadWindow_IELSkin .rwMinimizeButton:hover {
+        background-position: -61px -1609px;
+    }
+
+    .RadWindow_IELSkin .rwMaximizeButton, .RadWindow_IELSkin .rwMaximizeButton:hover {
+        background-position: -61px -1809px;
+    }
+
+    .RadWindow_IELSkin.rwMaximizedWindow .rwMaximizeButton, .RadWindow_IELSkin.rwMinimizedWindow .rwMinimizeButton, .RadWindow_IELSkin.rwMaximizedWindow .rwMaximizeButton:hover, .RadWindow_IELSkin.rwMinimizedWindow .rwMinimizeButton:hover {
+        background-position: -61px -1309px;
+    }
+
+    .RadWindow_IELSkin .rwReloadButton, .RadWindow_IELSkin .rwReloadButton:hover {
+        background-position: -61px -1309px;
+    }
+
+    .RadWindow_IELSkin .rwStatusbarRow .rwCorner, .RadWindow_IELSkin .rwStatusbarRow .rwStatusbar {
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: #dedede;
+    }
+
+    .RadWindow_IELSkin a.rwPopupButton span {
+        height: 32px;
+        line-height: 32px;
+    }
+
+    .RadWindow_IELSkin a.rwPopupButton {
+        height: 32px;
+        border-color: #cccccc;
+        color: #333333;
+        background-color: #ffffff;
+        background-image: linear-gradient();
+        background-position: 0 0;
+        background-repeat: repeat-x;
+        border-radius: 3px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #cccccc;
+    }
+
+        .RadWindow_IELSkin .rwWindowContent a.rwPopupButton:hover, .RadWindow_IELSkin a.rwPopupButton:focus {
+            border-color: #adadad;
+            color: #333333;
+            background-color: #e6e6e6;
+            background-image: linear-gradient();
+            background-position: 0 0;
+            background-repeat: repeat-x;
+            border-radius: 3px;
+            border-color: #adadad;
+        }
+
+        .RadWindow_IELSkin a.rwPopupButton:focus {
+            outline-width: thin;
+            outline-style: dotted;
+            outline-offset: -2px;
+        }
+
+        .RadWindow_IELSkin a.rwPopupButton:active {
+            border-color: #8c8c8c;
+            color: #333333;
+            background-color: #e6e6e6;
+            background-image: linear-gradient();
+            color: #333333;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.125) inset;
+            border-color: #8c8c8c;
+        }
+
+    .RadWindow_IELSkin .rwDialogPopup {
+        font: 14px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+
+    .RadWindow_IELSkin.rwMinimizedWindow, .RadWindow_IELSkin .RadWindow .rwMinimizedWindowOverlay {
+        width: 214px !important;
+        height: 36px !important;
+    }
+
+        .RadWindow_IELSkin.rwMinimizedWindow .rwControlButtons {
+            margin: -3px 0 0;
+        }
+
+        .RadWindow_IELSkin.rwMinimizedWindow .rwTable {
+            width: 214px !important;
+            height: 55px !important;
+        }
+
+        .RadWindow_IELSkin.rwMinimizedWindow .rwControlButtons {
+            width: 86px !important;
+        }

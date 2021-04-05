@@ -1,0 +1,359 @@
+.RadComboBox_GMMSkin
+{
+	color:#3b3b3b;
+	/*font:normal 13px/22px Arial,Helvetica,sans-serif;*/
+	font: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	border: solid 1px #4cb6e1;
+}
+.RadComboBox_GMMSkin .rcbInputCell,.RadComboBox_GMMSkin .rcbArrowCell
+{
+	height:26px;
+}
+.RadComboBox_GMMSkin .rcbInputCell
+{
+	border-color:#d6d6d6;
+	color:#545454;
+	background-color:white;
+	border:1px solid #c9c9c9;
+}
+.RadComboBox_GMMSkin .rcbInputCellLeft
+{
+	border-right-width:0;
+}
+.RadComboBox_GMMSkin .rcbInputCellRight
+{
+	border-left-width:0
+}
+.RadComboBox_GMMSkin .rcbInput
+{
+	color:#4e4e4e;
+	/*font:normal 12px Arial,Helvetica,sans-serif*/
+}
+.RadComboBox_GMMSkin .rcbEmptyMessage
+{
+	/*font-style:italic;*/
+	color:#8a8a8a;
+}
+.RadComboBox_GMMSkin .rcbArrowCell
+{
+	background-image:-webkit-linear-gradient(top,#4e4e4e 0,#4e4e4e 100%);
+	background-image:-moz-linear-gradient(top,#4e4e4e 0,#4e4e4e 100%);
+	background-image:-ms-linear-gradient(top,#4e4e4e 0,#4e4e4e 100%);
+	background-image:-o-linear-gradient(top,#4e4e4e 0,#4e4e4e 100%);
+	background-image:linear-gradient(top,#4e4e4e 0,#4e4e4e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e4e4e',endColorstr='#4e4e4e',GradientType=0);*/
+	/*border-color:#c9c9c9;*/
+	color:#3b3b3b;
+	background-color:#4cb6e1;
+	width:24px;
+	/*border-width:1px;*/
+	/*border-style:solid*/
+}
+.RadComboBox_GMMSkin .rcbArrowCell a
+{
+	width:24px;
+	height:26px;
+	background-image:url('Common/radActionsSprite.png');
+	background-position:-13px -62px;
+}
+.RadComboBox_GMMSkin .rcbHovered .rcbInputCell
+{
+	border-color:#3784cc;
+	color:#454545;
+	background-color:white;
+	border-color:#004c94;
+}
+.RadComboBox_GMMSkin .rcbHovered .rcbInput
+{
+	color:#454545;
+}
+.RadComboBox_GMMSkin .rcbHovered .rcbArrowCell
+{
+	background-image:-webkit-linear-gradient(top,#0067c7 0,#004c94 100%);
+	background-image:-moz-linear-gradient(top,#0067c7 0,#004c94 100%);
+	background-image:-ms-linear-gradient(top,#0067c7 0,#004c94 100%);
+	background-image:-o-linear-gradient(top,#0067c7 0,#004c94 100%);
+	background-image:linear-gradient(top,#0067c7 0,#004c94 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0067c7',endColorstr='#004c94',GradientType=0);
+	border-color:#004c94;
+	color:white;
+}
+.RadComboBox_GMMSkin .rcbHovered .rcbArrowCell a
+{
+	background-position:-113px -62px;
+}
+.RadComboBox_GMMSkin .rcbFocused .rcbInputCell
+{
+	border-color:#3784cc;
+	color:black;
+	background-color:white;
+	border-color:#2265a8;
+}
+.RadComboBox_GMMSkin .rcbFocused .rcbInput
+{
+	color:black
+}
+.RadComboBox_GMMSkin .rcbFocused .rcbArrowCell
+{
+	background-image:-webkit-linear-gradient(top,#2d7ac2 0,#2d7ac2 100%);
+	background-image:-moz-linear-gradient(top,#2d7ac2 0,#2d7ac2 100%);
+	background-image:-ms-linear-gradient(top,#2d7ac2 0,#2d7ac2 100%);
+	background-image:-o-linear-gradient(top,#2d7ac2 0,#2d7ac2 100%);
+	background-image:linear-gradient(top,#2d7ac2 0,#2d7ac2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2d7ac2',endColorstr='#2d7ac2',GradientType=0);
+	border-color:#2265a8;
+	color:white
+}
+.RadComboBox_GMMSkin .rcbFocused .rcbArrowCell a
+{
+	background-position:-113px -62px
+}
+.RadComboBox_GMMSkin .rcbDisabled .rcbInputCell
+{
+	border-color:#545454;
+	color:#545454;
+	background-color:white;
+	border-color:#c9c9c9
+}
+.RadComboBox_GMMSkin .rcbDisabled .rcbInput
+{
+	color:#d6d6d6
+}
+.RadComboBox_GMMSkin .rcbDisabled .rcbArrowCell
+{
+	background-image:-webkit-linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	background-image:-moz-linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	background-image:-ms-linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	background-image:-o-linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	background-image:linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#e3e3e3',GradientType=0);
+	border-color:#c9c9c9;
+	color:#d6d6d6;
+	background-color:#ebebeb
+}
+.RadComboBox_GMMSkin .rcbDisabled .rcbArrowCell a
+{
+	opacity:.8
+}
+.RadComboBox_GMMSkin .rcbReadOnly .rcbInputCell
+{
+	background-image:-webkit-linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	background-image:-moz-linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	background-image:-ms-linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	background-image:-o-linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	background-image:linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#e3e3e3',GradientType=0);
+	border-color:#c9c9c9;
+	color:#3b3b3b;
+	background-color:#ebebeb
+}
+.RadComboBox_GMMSkin .rcbReadOnly .rcbInput
+{
+	color:#3b3b3b
+}
+.RadComboBox_GMMSkin .rcbReadOnly .rcbArrowCellLeft
+{
+	border-right-width:0
+}
+.RadComboBox_GMMSkin .rcbReadOnly .rcbArrowCellRight
+{
+	border-left-width:0
+}
+.RadComboBox_GMMSkin .rcbHovered .rcbReadOnly .rcbInputCell
+{
+	background-image:-webkit-linear-gradient(top,#0067c7 0,#004c94 100%);
+	background-image:-moz-linear-gradient(top,#0067c7 0,#004c94 100%);
+	background-image:-ms-linear-gradient(top,#0067c7 0,#004c94 100%);
+	background-image:-o-linear-gradient(top,#0067c7 0,#004c94 100%);
+	background-image:linear-gradient(top,#0067c7 0,#004c94 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0067c7',endColorstr='#004c94',GradientType=0);
+	border-color:#004c94;
+	color:white
+}
+.RadComboBox_GMMSkin .rcbHovered .rcbReadOnly .rcbInput
+{
+	color:white
+}
+.RadComboBox_GMMSkin .rcbFocused .rcbReadOnly .rcbInputCell
+{
+	background-image:-webkit-linear-gradient(top,#2d7ac2 0,#2d7ac2 100%);
+	background-image:-moz-linear-gradient(top,#2d7ac2 0,#2d7ac2 100%);
+	background-image:-ms-linear-gradient(top,#2d7ac2 0,#2d7ac2 100%);
+	background-image:-o-linear-gradient(top,#2d7ac2 0,#2d7ac2 100%);
+	background-image:linear-gradient(top,#2d7ac2 0,#2d7ac2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2d7ac2',endColorstr='#2d7ac2',GradientType=0);
+	border-color:#2265a8;
+	color:white
+}
+.RadComboBox_GMMSkin .rcbFocused .rcbReadOnly .rcbInput
+{
+	color:white
+}
+.RadComboBox_GMMSkin .rcbDisabled .rcbReadOnly .rcbInputCellLeft
+{
+	background-image:-webkit-linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	background-image:-moz-linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	background-image:-ms-linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	background-image:-o-linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	background-image:linear-gradient(top,#ffffff 0,#e3e3e3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#e3e3e3',GradientType=0);
+	border-color:#c9c9c9;
+	color:#d6d6d6;
+	background-color:#ebebeb;
+	border-color:#c9c9c9
+}
+.RadComboBox_GMMSkin .rcbDisabled .rcbReadOnly .rcbInput
+{
+	color:#d6d6d6
+}
+.RadComboBoxDropDown_GMMSkin
+{
+	border-color:#d6d6d6;
+	color:#545454;
+	background:white;
+	/*font:normal 13px/22px Arial,Helvetica,sans-serif*/
+}
+.RadComboBoxDropDown_GMMSkin .rcbHeader,.RadComboBoxDropDown_GMMSkin .rcbFooter
+{
+	color:#5e5e5e;
+	background-color:#ebebeb
+}
+.RadComboBoxDropDown_GMMSkin .rcbHeader
+{
+	border-bottom-color:#d6d6d6
+}
+.RadComboBoxDropDown_GMMSkin .rcbFooter
+{
+	border-top-color:#d6d6d6
+}
+.RadComboBoxDropDown_GMMSkin .rcbList
+{
+	color:#545454;
+	background-color:white
+}
+.RadComboBoxDropDown_GMMSkin .rcbHovered
+{
+	color:#545454;
+	background:#bbd6f2
+}
+.RadComboBoxDropDown_GMMSkin .rcbDisabled
+{
+	color:#d6d6d6;
+	background-color:transparent
+}
+.RadComboBoxDropDown_GMMSkin .rcbLoading
+{
+	color:#545454;
+	background:#bbd6f2
+}
+.RadComboBoxDropDown_GMMSkin .rcbItem em,.RadComboBoxDropDown_GMMSkin .rcbHovered em
+{
+	color:#545454;
+	background:#bbd6f2
+}
+.RadComboBoxDropDown_GMMSkin .rcbCheckAllItems
+{
+	color:#5e5e5e;
+	background-color:#ebebeb
+}
+.RadComboBoxDropDown_GMMSkin .rcbCheckAllItemsHovered
+{
+	color:#5e5e5e;
+	background-color:#ebebeb
+}
+.RadComboBoxDropDown_GMMSkin .rcbMoreResults
+{
+	border-top-color:#d6d6d6;
+	color:#5e5e5e;
+	background-color:#ebebeb;
+	background-position:0 -500px
+}
+.RadComboBoxDropDown_GMMSkin .rcbMoreResults a
+{
+	background-image:url('Common/radActionsSprite.png');
+	background-position:-308px -181px
+}
+.RadComboBoxDropDown_GMMSkin .rcbSeparator
+{
+	color:#ffffff;
+	background:#8a8a8a
+}
+ DIV.RadComboBox_GMMSkin .rcbInputCell {
+
+	HEIGHT: 20px;
+
+}
+
+ DIV.RadComboBox_GMMSkin .rcbInput {
+
+	FONT-SIZE: 12px;
+
+	LINE-HEIGHT: 16px;
+
+}
+
+ DIV.RadComboBox_GMMSkin .rcbArrowCell {
+
+	FONT-SIZE: 12px;
+
+	HEIGHT: 20px;
+
+	LINE-HEIGHT: 16px;
+
+}
+
+ DIV.RadComboBox_GMMSkin .rcbHovered .rcbInput {
+
+	FONT-SIZE: 12px;
+
+	LINE-HEIGHT: 16px;
+
+}
+
+ DIV.RadComboBox_GMMSkin .rcbHovered .rcbArrowCell {
+
+	FONT-SIZE: 12px;
+
+	LINE-HEIGHT: 16px;
+
+}
+
+ DIV.RadComboBox_GMMSkin .rcbFocused .rcbInput {
+
+	FONT-SIZE: 12px;
+
+}
+
+ DIV.RadComboBoxDropDown_GMMSkin .rcbHeader {
+
+	FONT-SIZE: 12px;
+
+	LINE-HEIGHT: 16px;
+
+}
+
+ DIV.RadComboBoxDropDown_GMMSkin .rcbItem {
+
+	FONT-SIZE: 12px;
+
+	LINE-HEIGHT: 16px;
+
+}
+
+ DIV.RadComboBoxDropDown_GMMSkin .rcbHovered {
+
+	FONT-SIZE: 12px;
+
+	LINE-HEIGHT: 16px;
+
+}
+
+ DIV.RadComboBoxDropDown_GMMSkin .rcbDisabled {
+
+	FONT-SIZE: 12px;
+
+	LINE-HEIGHT: 16px;
+
+}
+

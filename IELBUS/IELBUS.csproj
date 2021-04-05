@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7297479A-10F5-4ADA-9CB7-DEC71BDC916C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IELBUS</RootNamespace>
+    <AssemblyName>IELBUS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PVLSECVB">
+      <HintPath>C:\Users\JULIO CESAR\Desktop\IELibertadWEB\IELibertadWEB\IELibertadWEB\LibreriasSec\PVLSECVB.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alumnos\AlumnosBus.cs" />
+    <Compile Include="Common\CatalogosBR.cs" />
+    <Compile Include="Common\CommonBR.cs" />
+    <Compile Include="Common\ConfiguracionBR.cs" />
+    <Compile Include="Comun\CiclosBus.cs" />
+    <Compile Include="Comun\ColoniaBR.cs" />
+    <Compile Include="Comun\GruposBus.cs" />
+    <Compile Include="Comun\PagosBus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\SecurityBR.cs" />
+    <Compile Include="Startup\MenuTopBus.cs" />
+    <Compile Include="Token\TokenBus.cs" />
+    <Compile Include="User\UsersBR.cs" />
+    <Compile Include="Usuarios\UsuarioBus.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IELDAT\IELDAT.csproj">
+      <Project>{4f20246f-d653-4ffc-adae-a75e83809d40}</Project>
+      <Name>IELDAT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IELENT\IELENT.csproj">
+      <Project>{093fdde7-46f6-4328-8eee-a7ea37446a89}</Project>
+      <Name>IELENT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IELSECVB\IELSECVB.vbproj">
+      <Project>{bc568e5c-811c-46a7-9106-46316184fe26}</Project>
+      <Name>IELSECVB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

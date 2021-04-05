@@ -1,0 +1,12 @@
+F:\MCQUEEN\IELWEB\IELENT\bin\Release\IELENT.dll.config
+F:\MCQUEEN\IELWEB\IELENT\bin\Release\IELENT.dll
+F:\MCQUEEN\IELWEB\IELENT\bin\Release\IELENT.pdb
+F:\MCQUEEN\IELWEB\IELENT\obj\Release\IELENT.csprojResolveAssemblyReference.cache
+F:\MCQUEEN\IELWEB\IELENT\obj\Release\IELENT.dll
+F:\MCQUEEN\IELWEB\IELENT\obj\Release\IELENT.pdb
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELENT\bin\Release\IELENT.dll.config
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELENT\bin\Release\IELENT.dll
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELENT\bin\Release\IELENT.pdb
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELENT\obj\Release\IELENT.csprojResolveAssemblyReference.cache
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELENT\obj\Release\IELENT.dll
+C:\Users\JULIO CESAR\Desktop\IELWEB\IELENT\obj\Release\IELENT.pdb

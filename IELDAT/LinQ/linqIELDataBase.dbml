@@ -1,0 +1,2290 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="IELDataBase" Class="linqIELDataBaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=JULIOCESAR-PC;Initial Catalog=IELDataBase;Persist Security Info=True;User ID=sa" SettingsObjectName="IELDAT.Properties.Settings" SettingsPropertyName="IELDataBaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Alumnos" Member="Alumnos">
+    <Type Name="Alumno">
+      <Column Name="IdAlumno" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NumeroMatricula" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaMatricula" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="APaterno" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="AMaterno" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Nombres" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaNacimiento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Sexo" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Nacionalidad" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Grado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Grupo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NumeroLista" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EscuelaProcedencia" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Hermanos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GradoHermanos" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Calle" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Numero" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Colonia" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Delegacion" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Estado" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoPostal" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Curp" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="EdadAnos" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EdadMeses" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Tutor" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="UsuarioAlta" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UsuarioModifica" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAlta" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaModifica" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Foto" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="NivelAcademico" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Estatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ServerPath" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Beca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCiclo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FormaPago" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WCFSERVICIOS" Member="WCFSERVICIOs">
+    <Type Name="WCFSERVICIO">
+      <Column Name="IDSERVICIOS" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="WCFSERVICIO_WCFMETODO" Member="WCFMETODOs" ThisKey="IDSERVICIOS" OtherKey="IDSERVICIOS" Type="WCFMETODO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APLICACION" Member="APLICACIONs">
+    <Type Name="APLICACION">
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="URLINICIO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="APLICACION_AUDIT_USUARIO" Member="AUDIT_USUARIOs" ThisKey="IDAPLICACION" OtherKey="IDAPLICACION" Type="AUDIT_USUARIO" />
+      <Association Name="APLICACION_ESTACIONESXAPP" Member="ESTACIONESXAPPs" ThisKey="IDAPLICACION" OtherKey="IDAPLICACION" Type="ESTACIONESXAPP" />
+      <Association Name="APLICACION_LOGERROR" Member="LOGERRORs" ThisKey="IDAPLICACION" OtherKey="IDAPLICACION" Type="LOGERROR" />
+      <Association Name="APLICACION_ROLE" Member="ROLEs" ThisKey="IDAPLICACION" OtherKey="IDAPLICACION" Type="ROLE" />
+      <Association Name="APLICACION_USUARIOXAPLICACION" Member="USUARIOXAPLICACIONs" ThisKey="IDAPLICACION" OtherKey="IDAPLICACION" Type="USUARIOXAPLICACION" />
+      <Association Name="APLICACION_WCFMETODO" Member="WCFMETODOs" ThisKey="IDAPLICACION" OtherKey="IDAPLICACION" Type="WCFMETODO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AUDIT_CONTACTO" Member="AUDIT_CONTACTOs">
+    <Type Name="AUDIT_CONTACTO">
+      <Column Name="IDCONTACTOAUDIT" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDOPERACIONAUDIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDCONTACTO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDTIPOCONTACTO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VALOR" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FECHAALTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVOCONTACTO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDUSERMODIFICA" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDAPPMODIFICA" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FECHATRANSACCION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="CAT_OPERACIONAUDIT_AUDIT_CONTACTO" Member="CAT_OPERACIONAUDIT" ThisKey="IDOPERACIONAUDIT" OtherKey="IDOPERACIONAUDIT" Type="CAT_OPERACIONAUDIT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AUDIT_DOMICILIO" Member="AUDIT_DOMICILIOs">
+    <Type Name="AUDIT_DOMICILIO">
+      <Column Name="IDDOMICILIOAUDIT" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDOPERACIONAUDIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDDOMICILIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CALLE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NUMEXT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NUMINT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IDESTADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ESTADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDMUN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MUNICIPIO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDCOLONIA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COLONIA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FECHAALTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVODOM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDUSERMODIFICA" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDAPPMODIFICA" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FECHATRANSACCION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="CAT_OPERACIONAUDIT_AUDIT_DOMICILIO" Member="CAT_OPERACIONAUDIT" ThisKey="IDOPERACIONAUDIT" OtherKey="IDOPERACIONAUDIT" Type="CAT_OPERACIONAUDIT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AUDIT_USUARIOS" Member="AUDIT_USUARIOs">
+    <Type Name="AUDIT_USUARIO">
+      <Column Name="IDUSUARIOAUDIT" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDOPERACIONAUDIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDSEXO" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="IDTIPOPERSONA" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="IDESTADOCIVIL" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="IDAREA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IDTIPOUSUARIO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IDUSUARIOAPP" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="APATERNO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="AMATERNO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="FECHANACCONST" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="USUARIO" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RUTAFOTOPERFIL" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="FECHAALTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVOUSR" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDUSERMODIFICA" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDAPPMODIFICA" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FECHATRANSACCION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="APLICACION_AUDIT_USUARIO" Member="APLICACION" ThisKey="IDAPLICACION" OtherKey="IDAPLICACION" Type="APLICACION" IsForeignKey="true" />
+      <Association Name="CAT_OPERACIONAUDIT_AUDIT_USUARIO" Member="CAT_OPERACIONAUDIT" ThisKey="IDOPERACIONAUDIT" OtherKey="IDOPERACIONAUDIT" Type="CAT_OPERACIONAUDIT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CAT_AREA" Member="CAT_AREAs">
+    <Type Name="CAT_AREA">
+      <Column Name="IDAREA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="CAT_AREA_USUARIO" Member="USUARIOs" ThisKey="IDAREA" OtherKey="IDAREA" Type="USUARIO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CAT_ESTACIONES" Member="CAT_ESTACIONEs">
+    <Type Name="CAT_ESTACIONE">
+      <Column Name="IDESTACION" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DESRIPCION" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="CAT_ESTACIONE_ESTACIONESXAPP" Member="ESTACIONESXAPPs" ThisKey="IDESTACION" OtherKey="IDESTACION" Type="ESTACIONESXAPP" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CAT_ESTADOCIVIL" Member="CAT_ESTADOCIVILs">
+    <Type Name="CAT_ESTADOCIVIL">
+      <Column Name="IDESTADOCIVIL" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="CAT_ESTADOCIVIL_USUARIO" Member="USUARIOs" ThisKey="IDESTADOCIVIL" OtherKey="IDESTADOCIVIL" Type="USUARIO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CAT_GRALS" Member="CAT_GRALs">
+    <Type Name="CAT_GRAL">
+      <Column Name="IDCATGRAL" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRETABLA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDTABLA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESCRIPCIONTABLA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDFILTRO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CAT_OPERACIONAUDIT" Member="CAT_OPERACIONAUDITs">
+    <Type Name="CAT_OPERACIONAUDIT">
+      <Column Name="IDOPERACIONAUDIT" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="CAT_OPERACIONAUDIT_AUDIT_CONTACTO" Member="AUDIT_CONTACTOs" ThisKey="IDOPERACIONAUDIT" OtherKey="IDOPERACIONAUDIT" Type="AUDIT_CONTACTO" />
+      <Association Name="CAT_OPERACIONAUDIT_AUDIT_DOMICILIO" Member="AUDIT_DOMICILIOs" ThisKey="IDOPERACIONAUDIT" OtherKey="IDOPERACIONAUDIT" Type="AUDIT_DOMICILIO" />
+      <Association Name="CAT_OPERACIONAUDIT_AUDIT_USUARIO" Member="AUDIT_USUARIOs" ThisKey="IDOPERACIONAUDIT" OtherKey="IDOPERACIONAUDIT" Type="AUDIT_USUARIO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CAT_SEXO" Member="CAT_SEXOs">
+    <Type Name="CAT_SEXO">
+      <Column Name="IDSEXO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="CAT_SEXO_USUARIO" Member="USUARIOs" ThisKey="IDSEXO" OtherKey="IDSEXO" Type="USUARIO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CAT_TIPOCONTACTO" Member="CAT_TIPOCONTACTOs">
+    <Type Name="CAT_TIPOCONTACTO">
+      <Column Name="IDTIPOCONTACTO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="CAT_TIPOCONTACTO_CONTACTO" Member="CONTACTOs" ThisKey="IDTIPOCONTACTO" OtherKey="IDTIPOCONTACTO" Type="CONTACTO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CAT_TIPOPERSONA" Member="CAT_TIPOPERSONAs">
+    <Type Name="CAT_TIPOPERSONA">
+      <Column Name="IDTIPOPERSONA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="CAT_TIPOPERSONA_USUARIO" Member="USUARIOs" ThisKey="IDTIPOPERSONA" OtherKey="IDTIPOPERSONA" Type="USUARIO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CAT_TIPOUSUARIO" Member="CAT_TIPOUSUARIOs">
+    <Type Name="CAT_TIPOUSUARIO">
+      <Column Name="IDTIPOUSUARIO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="CAT_TIPOUSUARIO_USUARIO" Member="USUARIOs" ThisKey="IDTIPOUSUARIO" OtherKey="IDTIPOUSUARIO" Type="USUARIO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Categoria" Member="Categorias">
+    <Type Name="Categoria">
+      <Column Name="CategoriaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="ImageCat" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Association Name="Categoria_PostCategoria" Member="PostCategorias" ThisKey="CategoriaID" OtherKey="CategoriaID" Type="PostCategoria" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CATGENERALES" Member="CATGENERALEs">
+    <Type Name="CATGENERALE">
+      <Column Name="IDCATGENERALES" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRECATALOGO" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="IDCATALOGO" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FILTRO" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Ciclo" Member="Ciclos">
+    <Type Name="Ciclo">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NombreCiclo" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="FechaInicio" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="FechaFin" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="MontoInscripcion" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="MontoColegiatura" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="Estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.clientes" Member="clientes">
+    <Type Name="cliente">
+      <Column Name="id_cliente" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="rfcRecep" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="nmbRecep" Type="System.String" DbType="NVarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="calleR" Type="System.String" DbType="NVarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="nroExtR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="nroIntR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="coloniaR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="municipioR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="localidadR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="estadoR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="paisRecep" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cpRecep" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Comentario" Member="Comentarios">
+    <Type Name="Comentario">
+      <Column Name="ComentarioID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PostID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Url" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Contenido" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Post_Comentario" Member="Post" ThisKey="PostID" OtherKey="PostID" Type="Post" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CONFIGAPP" Member="CONFIGAPPs">
+    <Type Name="CONFIGAPP">
+      <Column Name="IDCONFIGAPP" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="VALOR" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CONTACTO" Member="CONTACTOs">
+    <Type Name="CONTACTO">
+      <Column Name="IDCONTACTO" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDTIPOCONTACTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VALOR" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FECHAALTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="CAT_TIPOCONTACTO_CONTACTO" Member="CAT_TIPOCONTACTO" ThisKey="IDTIPOCONTACTO" OtherKey="IDTIPOCONTACTO" Type="CAT_TIPOCONTACTO" IsForeignKey="true" />
+      <Association Name="USUARIO_CONTACTO" Member="USUARIO" ThisKey="IDUSUARIO" OtherKey="IDUSUARIO" Type="USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DOMICILIO" Member="DOMICILIOs">
+    <Type Name="DOMICILIO">
+      <Column Name="IDDOMICILIO" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CALLE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NUMEXT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NUMINT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IDESTADO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ESTADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDMUN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MUNICIPIO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDCOLONIA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="COLONIA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FECHAALTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="USUARIO_DOMICILIO" Member="USUARIO" ThisKey="IDUSUARIO" OtherKey="IDUSUARIO" Type="USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.empresas" Member="empresas">
+    <Type Name="empresa">
+      <Column Name="id_empresa" Type="System.String" DbType="NVarChar(13) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="rfcEmisor" Type="System.String" DbType="NVarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="nmbEmisor" Type="System.String" DbType="NVarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="calleE" Type="System.String" DbType="NVarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="nroExtE" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="nroIntE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="coloniaE" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="municipioE" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="localidadE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="estadoE" Type="System.String" DbType="NVarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="paisEmisor" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="cpEmisor" Type="System.String" DbType="NVarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="nmbRegimen" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ESTACIONESXAPP" Member="ESTACIONESXAPPs">
+    <Type Name="ESTACIONESXAPP">
+      <Column Name="IDESTACIONXAPP" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDESTACION" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="ESTACIONESXAPP_ROLESXUSUARIO" Member="ROLESXUSUARIOs" ThisKey="IDESTACIONXAPP" OtherKey="IDESTACIONXAPP" Type="ROLESXUSUARIO" />
+      <Association Name="CAT_ESTACIONE_ESTACIONESXAPP" Member="CAT_ESTACIONE" ThisKey="IDESTACION" OtherKey="IDESTACION" Type="CAT_ESTACIONE" IsForeignKey="true" />
+      <Association Name="APLICACION_ESTACIONESXAPP" Member="APLICACION" ThisKey="IDAPLICACION" OtherKey="IDAPLICACION" Type="APLICACION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Formatos" Member="Formatos">
+    <Type Name="Formato">
+      <Column Name="FormatoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="FileRut" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Grado" Member="Grados">
+    <Type Name="Grado">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDNivel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDGrado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DescripcionGrado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Grupo" Member="Grupos">
+    <Type Name="Grupo">
+      <Column Name="IDGrupo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDNivel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDGrado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDCiclo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreGrupo" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InfoAlumnos" Member="InfoAlumnos">
+    <Type Name="InfoAlumno">
+      <Column Name="NumeroMatricula" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NombrePadreTutor" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="OcupacionPadre" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="TelefonoPadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TelefonoTrabajoPadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CelularPadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FechaNacimientoPadre" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SueldoPadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NacionalidadPadre" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="NombreMadreTutor" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="OcupacionMadre" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="TelefonoMadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TelefonoTrabajoMadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CelularMadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FechaNacimientoMadre" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SueldoMadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NacionalidadMadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NombreFamVecino" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TelefonoVecino" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TelefonoTrabajoVecino" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CelularVecino" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EducacionFisica" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Medicamento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreMedicamento" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="DosisMedicamento" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="AlimentoProhibido" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Peso" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Talla" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TipoSangre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Enfermedades" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreEnfermedades" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="ProcedimientoCrisis" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Certificado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EnfermedadCertificado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Alergia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreAlergia" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="ProcedimintoCrisisAlergia" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NombreAccidente" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TelefonoAccidente" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NombreHospital" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Medico" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreMedico" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TelefonoMedico" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="CedulaMedico" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="AutorizaTraslado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProcedimientoAccidente" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOGERROR" Member="LOGERRORs">
+    <Type Name="LOGERROR">
+      <Column Name="IDLOGERROR" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="VCHMENSAJE" Type="System.String" DbType="VarChar(450)" CanBeNull="true" />
+      <Column Name="VCHHOSTNAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="VCHIP" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="VCHSTACKTRACE" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="DTFECHAERROR" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VCHUSUARIO" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="APLICACION_LOGERROR" Member="APLICACION" ThisKey="IDAPLICACION" OtherKey="IDAPLICACION" Type="APLICACION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.numeracion" Member="numeracions">
+    <Type Name="numeracion">
+      <Column Name="id_numeracion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_DocType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nmbSerie" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="nmbNumberFrom" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="nmbCurrentNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="nmbNumberTo" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="nmbAuthNumber" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="nmbAuthDate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nmbRFC" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Numeraciones" Member="Numeraciones">
+    <Type Name="Numeracione">
+      <Column Name="Clave_Proceso" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Tipo_Proc" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="Inicial" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="Final" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="Actual" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Fecha_Inicio" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Serie" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PagosAlumno" Member="PagosAlumnos">
+    <Type Name="PagosAlumno">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idCiclo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumeroMatricula" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="idGrupo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="idGrado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="idAlumno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Concepto" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="MontoTotal" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="MontoActual" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="idEstatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaMovimiento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FechaAlta" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UsuarioModifica" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UsuarioAlta" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FechaModifica" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MedioPago" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Referencia" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PERMISOSXELEMENTOSOBJETO" Member="PERMISOSXELEMENTOSOBJETOs">
+    <Type Name="PERMISOSXELEMENTOSOBJETO">
+      <Column Name="IDELEMENTOSXOBJ" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDPERMISOSOBJ" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ELEMENTO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TOOLTIP" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="PERMISOXOBJETO_PERMISOSXELEMENTOSOBJETO" Member="PERMISOXOBJETO" ThisKey="IDPERMISOSOBJ" OtherKey="IDPERMISOSOBJ" Type="PERMISOXOBJETO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PERMISOSXMENU" Member="PERMISOSXMENUs">
+    <Type Name="PERMISOSXMENU">
+      <Column Name="IDPERMISOSMENU" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDROL" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NOMBREMENU" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TIPOOBJETO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="URL" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="IMAGEN" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ORDEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TOOLTIP" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="PERMISOSXMENU_PERMISOSXSUBMENU" Member="PERMISOSXSUBMENUs" ThisKey="IDPERMISOSMENU" OtherKey="IDPERMISOSMENU" Type="PERMISOSXSUBMENU" />
+      <Association Name="ROLE_PERMISOSXMENU" Member="ROLE" ThisKey="IDROL" OtherKey="IDROL" Type="ROLE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PERMISOSXSUBMENU" Member="PERMISOSXSUBMENUs">
+    <Type Name="PERMISOSXSUBMENU">
+      <Column Name="IDPERMISOSXSUBMENU" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDPERMISOSMENU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NOMBRESUBMENU" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TIPOOBJETO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="URL" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="IMAGEN" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ORDEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TOOLTIP" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="PERMISOSXMENU_PERMISOSXSUBMENU" Member="PERMISOSXMENU" ThisKey="IDPERMISOSMENU" OtherKey="IDPERMISOSMENU" Type="PERMISOSXMENU" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PERMISOXOBJETOS" Member="PERMISOXOBJETOs">
+    <Type Name="PERMISOXOBJETO">
+      <Column Name="IDPERMISOSOBJ" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDROL" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PAGINA" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="NOMBREOBJETO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TIPOOBJETO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TOOLTIP" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="PERMISOXOBJETO_PERMISOSXELEMENTOSOBJETO" Member="PERMISOSXELEMENTOSOBJETOs" ThisKey="IDPERMISOSOBJ" OtherKey="IDPERMISOSOBJ" Type="PERMISOSXELEMENTOSOBJETO" />
+      <Association Name="ROLE_PERMISOXOBJETO" Member="ROLE" ThisKey="IDROL" OtherKey="IDROL" Type="ROLE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Post" Member="Posts">
+    <Type Name="Post">
+      <Column Name="PostID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titulo" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="PosteadoPor" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Contenido" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Publicado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Comentarios" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="imagen" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Post_Comentario" Member="Comentarios1" ThisKey="PostID" OtherKey="PostID" Type="Comentario" />
+      <Association Name="Post_PostCategoria" Member="PostCategorias" ThisKey="PostID" OtherKey="PostID" Type="PostCategoria" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PostCategoria" Member="PostCategorias">
+    <Type Name="PostCategoria">
+      <Column Name="PostID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CategoriaID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Categoria_PostCategoria" Member="Categoria" ThisKey="CategoriaID" OtherKey="CategoriaID" Type="Categoria" IsForeignKey="true" />
+      <Association Name="Post_PostCategoria" Member="Post" ThisKey="PostID" OtherKey="PostID" Type="Post" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.productos" Member="productos">
+    <Type Name="producto">
+      <Column Name="id_producto" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="producto" Member="producto1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="id_unidad_medida" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="p_compra" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="p_venta" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="existencia" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="producto_venta_detalle" Member="venta_detalles" ThisKey="id_producto" OtherKey="id_producto" Type="venta_detalle" />
+      <Association Name="producto_venta_detalle_tmp" Member="venta_detalle_tmps" ThisKey="id_producto" OtherKey="id_producto" Type="venta_detalle_tmp" />
+      <Association Name="unidad_medida_producto" Member="unidad_medida" ThisKey="id_unidad_medida" OtherKey="id_unidad_medida" Type="unidad_medida" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ROLES" Member="ROLEs">
+    <Type Name="ROLE">
+      <Column Name="IDROL" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="ROLE_PERMISOSXMENU" Member="PERMISOSXMENUs" ThisKey="IDROL" OtherKey="IDROL" Type="PERMISOSXMENU" />
+      <Association Name="ROLE_PERMISOXOBJETO" Member="PERMISOXOBJETOs" ThisKey="IDROL" OtherKey="IDROL" Type="PERMISOXOBJETO" />
+      <Association Name="ROLE_ROLESXUSUARIO" Member="ROLESXUSUARIOs" ThisKey="IDROL" OtherKey="IDROL" Type="ROLESXUSUARIO" />
+      <Association Name="APLICACION_ROLE" Member="APLICACION" ThisKey="IDAPLICACION" OtherKey="IDAPLICACION" Type="APLICACION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ROLESXUSUARIO" Member="ROLESXUSUARIOs">
+    <Type Name="ROLESXUSUARIO">
+      <Column Name="IDROLXUSUARIO" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDROL" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDESTACIONXAPP" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="ROLE_ROLESXUSUARIO" Member="ROLE" ThisKey="IDROL" OtherKey="IDROL" Type="ROLE" IsForeignKey="true" />
+      <Association Name="ESTACIONESXAPP_ROLESXUSUARIO" Member="ESTACIONESXAPP" ThisKey="IDESTACIONXAPP" OtherKey="IDESTACIONXAPP" Type="ESTACIONESXAPP" IsForeignKey="true" />
+      <Association Name="USUARIO_ROLESXUSUARIO" Member="USUARIO" ThisKey="IDUSUARIO" OtherKey="IDUSUARIO" Type="USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_chatMessages" Member="tbl_chatMessages">
+    <Type Name="tbl_chatMessage">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="chatID" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="senderName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="senderID" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="recipientID" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="recipientName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="messageBody" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
+      <Column Name="isTyping" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="messageTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="isRead" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_userStatus" Member="tbl_userStatus">
+    <Type Name="tbl_userStatus">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userID" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="userName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Theme" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Sound" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Avatar" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="profileLink" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="LastLogin" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastActivity" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TpoProy" Member="TpoProys">
+    <Type Name="TpoProy">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tipoProy" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="duracion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="categoria" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Transacciones" Member="Transacciones">
+    <Type Name="Transaccione">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idAlumno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idPago" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Concepto" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Monto" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="FechaTransaccion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UsuarioTransaccion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FormaPago" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Referencia" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.unidad_medida" Member="unidad_medidas">
+    <Type Name="unidad_medida">
+      <Column Name="id_unidad_medida" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="unidad_medida" Member="unidad_medida1" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Association Name="unidad_medida_producto" Member="productos" ThisKey="id_unidad_medida" OtherKey="id_unidad_medida" Type="producto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.users" Member="users">
+    <Type Name="user">
+      <Column Name="user_login" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="user_password" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="nombre" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ventas" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="reportes" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="administrar" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="productos" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="clientes" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="facturacion" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="blog" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="imagen" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="proy" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="biblio" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="alumnos" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="profesores" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="cobranza" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ayuda" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="pago" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.USUARIOS" Member="USUARIOs">
+    <Type Name="USUARIO">
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDSEXO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDTIPOPERSONA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDESTADOCIVIL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDAREA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDTIPOUSUARIO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDUSUARIOAPP" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="APATERNO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="AMATERNO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="FECHANACCONST" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="USUARIO" Member="USUARIO1" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RUTAFOTOPERFIL" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="FECHAALTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="USUARIO_CONTACTO" Member="CONTACTOs" ThisKey="IDUSUARIO" OtherKey="IDUSUARIO" Type="CONTACTO" />
+      <Association Name="USUARIO_DOMICILIO" Member="DOMICILIOs" ThisKey="IDUSUARIO" OtherKey="IDUSUARIO" Type="DOMICILIO" />
+      <Association Name="USUARIO_ROLESXUSUARIO" Member="ROLESXUSUARIOs" ThisKey="IDUSUARIO" OtherKey="IDUSUARIO" Type="ROLESXUSUARIO" />
+      <Association Name="USUARIO_USUARIOXAPLICACION" Member="USUARIOXAPLICACIONs" ThisKey="IDUSUARIO" OtherKey="IDUSUARIO" Type="USUARIOXAPLICACION" />
+      <Association Name="CAT_AREA_USUARIO" Member="CAT_AREA" ThisKey="IDAREA" OtherKey="IDAREA" Type="CAT_AREA" IsForeignKey="true" />
+      <Association Name="CAT_ESTADOCIVIL_USUARIO" Member="CAT_ESTADOCIVIL" ThisKey="IDESTADOCIVIL" OtherKey="IDESTADOCIVIL" Type="CAT_ESTADOCIVIL" IsForeignKey="true" />
+      <Association Name="CAT_SEXO_USUARIO" Member="CAT_SEXO" ThisKey="IDSEXO" OtherKey="IDSEXO" Type="CAT_SEXO" IsForeignKey="true" />
+      <Association Name="CAT_TIPOPERSONA_USUARIO" Member="CAT_TIPOPERSONA" ThisKey="IDTIPOPERSONA" OtherKey="IDTIPOPERSONA" Type="CAT_TIPOPERSONA" IsForeignKey="true" />
+      <Association Name="CAT_TIPOUSUARIO_USUARIO" Member="CAT_TIPOUSUARIO" ThisKey="IDTIPOUSUARIO" OtherKey="IDTIPOUSUARIO" Type="CAT_TIPOUSUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.USUARIOXAPLICACION" Member="USUARIOXAPLICACIONs">
+    <Type Name="USUARIOXAPLICACION">
+      <Column Name="IDUSRSXAPP" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="APLICACION_USUARIOXAPLICACION" Member="APLICACION" ThisKey="IDAPLICACION" OtherKey="IDAPLICACION" Type="APLICACION" IsForeignKey="true" />
+      <Association Name="USUARIO_USUARIOXAPLICACION" Member="USUARIO" ThisKey="IDUSUARIO" OtherKey="IDUSUARIO" Type="USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.venta" Member="ventas">
+    <Type Name="venta">
+      <Column Name="id_venta" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="user_login" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="docSerie" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="docNumber" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="docDate" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tpoDoc" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="rfcEmisor" Type="System.String" DbType="NVarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="nmbEmisor" Type="System.String" DbType="NVarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="rfcRecep" Type="System.String" DbType="NVarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="nmbRecep" Type="System.String" DbType="NVarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="moneda" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="subtotal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="iva" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="total" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="comentarios" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="valorPalabras" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="metodo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ctaPago" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lugarExp" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tpoCambio" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="venta_venta_detalle" Member="venta_detalles" ThisKey="id_venta" OtherKey="id_venta" Type="venta_detalle" />
+    </Type>
+  </Table>
+  <Table Name="dbo.venta_detalle" Member="venta_detalles">
+    <Type Name="venta_detalle">
+      <Column Name="id_venta_detalle" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_venta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_producto" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cantidad" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="p_venta" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="aduana" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pedimento" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="f_pedimento" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="predial" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="producto_venta_detalle" Member="producto" ThisKey="id_producto" OtherKey="id_producto" Type="producto" IsForeignKey="true" />
+      <Association Name="venta_venta_detalle" Member="venta" ThisKey="id_venta" OtherKey="id_venta" Type="venta" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.venta_detalle_tmp" Member="venta_detalle_tmps">
+    <Type Name="venta_detalle_tmp">
+      <Column Name="id_venta_detalle_tmp" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_producto" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cantidad" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="user_login" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="p_venta" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="aduana" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pedimento" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="f_pedimento" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="predial" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="producto_venta_detalle_tmp" Member="producto" ThisKey="id_producto" OtherKey="id_producto" Type="producto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WCFMETODOS" Member="WCFMETODOs">
+    <Type Name="WCFMETODO">
+      <Column Name="IDMETODOS" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDSERVICIOS" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NOMBREMETODO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RECURRENTE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="WCFMETODO_WCFRECURRENCIA" Member="WCFRECURRENCIAs" ThisKey="IDMETODOS" OtherKey="IDMETODOS" Type="WCFRECURRENCIA" />
+      <Association Name="APLICACION_WCFMETODO" Member="APLICACION" ThisKey="IDAPLICACION" OtherKey="IDAPLICACION" Type="APLICACION" IsForeignKey="true" />
+      <Association Name="WCFSERVICIO_WCFMETODO" Member="WCFSERVICIO" ThisKey="IDSERVICIOS" OtherKey="IDSERVICIOS" Type="WCFSERVICIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WCFRECURRENCIA" Member="WCFRECURRENCIAs">
+    <Type Name="WCFRECURRENCIA">
+      <Column Name="IDRECURRENCIA" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDMETODOS" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FECHAACCESO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="WCFMETODO_WCFRECURRENCIA" Member="WCFMETODO" ThisKey="IDMETODOS" OtherKey="IDMETODOS" Type="WCFMETODO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.proc_ALUMNOS" Method="proc_ALUMNOS">
+    <Parameter Name="NumeroMatricula" Parameter="numeroMatricula" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="APaterno" Parameter="aPaterno" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="AMaterno" Parameter="aMaterno" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Nombres" Parameter="nombres" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="FechaNacimiento" Parameter="fechaNacimiento" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Sexo" Parameter="sexo" Type="System.String" DbType="NVarChar(2)" />
+    <Parameter Name="Nacionalidad" Parameter="nacionalidad" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Grado" Parameter="grado" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="EscuelaProcedencia" Parameter="escuelaProcedencia" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="Hermanos" Parameter="hermanos" Type="System.Int32" DbType="Int" />
+    <Parameter Name="GradoHermanos" Parameter="gradoHermanos" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Calle" Parameter="calle" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Numero" Parameter="numero" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Colonia" Parameter="colonia" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Delegacion" Parameter="delegacion" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Estado" Parameter="estado" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="CodigoPostal" Parameter="codigoPostal" Type="System.String" DbType="NVarChar(5)" />
+    <Parameter Name="Telefono" Parameter="telefono" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="Curp" Parameter="curp" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="EdadAnos" Parameter="edadAnos" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="EdadMeses" Parameter="edadMeses" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Foto" Parameter="foto" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="NivelAcademico" Parameter="nivelAcademico" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="NombrePadreTutor" Parameter="nombrePadreTutor" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="OcupacionPadre" Parameter="ocupacionPadre" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="TelefonoPadre" Parameter="telefonoPadre" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="TelefonoTrabajoPadre" Parameter="telefonoTrabajoPadre" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="CelularPadre" Parameter="celularPadre" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="FechaNacimientoPadre" Parameter="fechaNacimientoPadre" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="SueldoPadre" Parameter="sueldoPadre" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="NacionalidadPadre" Parameter="nacionalidadPadre" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="NombreMadreTutor" Parameter="nombreMadreTutor" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="OcupacionMadre" Parameter="ocupacionMadre" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="TelefonoMadre" Parameter="telefonoMadre" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="TelefonoTrabajoMadre" Parameter="telefonoTrabajoMadre" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="CelularMadre" Parameter="celularMadre" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="FechaNacimientoMadre" Parameter="fechaNacimientoMadre" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="SueldoMadre" Parameter="sueldoMadre" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="NacionalidadMadre" Parameter="nacionalidadMadre" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="NombreFamVecino" Parameter="nombreFamVecino" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="TelefonoVecino" Parameter="telefonoVecino" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="TelefonoTrabajoVecino" Parameter="telefonoTrabajoVecino" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="CelularVecino" Parameter="celularVecino" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="EducacionFisica" Parameter="educacionFisica" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Medicamento" Parameter="medicamento" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NombreMedicamento" Parameter="nombreMedicamento" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="DosisMedicamento" Parameter="dosisMedicamento" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Peso" Parameter="peso" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Talla" Parameter="talla" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="TipoSangre" Parameter="tipoSangre" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Enfermedades" Parameter="enfermedades" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NombreEnfermedades" Parameter="nombreEnfermedades" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="ProcedimientoCrisis" Parameter="procedimientoCrisis" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="Certificado" Parameter="certificado" Type="System.Int32" DbType="Int" />
+    <Parameter Name="EnfermedadCertificado" Parameter="enfermedadCertificado" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Alergia" Parameter="alergia" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NombreAlergia" Parameter="nombreAlergia" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="ProcedimintoCrisisAlergia" Parameter="procedimintoCrisisAlergia" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="NombreAccidente" Parameter="nombreAccidente" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="TelefonoAccidente" Parameter="telefonoAccidente" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="NombreHospital" Parameter="nombreHospital" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Medico" Parameter="medico" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NombreMedico" Parameter="nombreMedico" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="TelefonoMedico" Parameter="telefonoMedico" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="CedulaMedico" Parameter="cedulaMedico" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="AutorizaTraslado" Parameter="autorizaTraslado" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ProcedimientoAccidente" Parameter="procedimientoAccidente" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="NombreUsuario" Parameter="nombreUsuario" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Tutor" Parameter="tutor" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Estatus" Parameter="estatus" Type="System.String" DbType="NVarChar(3)" />
+    <Parameter Name="ServerPath" Parameter="serverPath" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="Beca" Parameter="beca" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FormaPago" Parameter="formaPago" Type="System.Int32" DbType="Int" />
+    <ElementType Name="proc_ALUMNOSResult">
+      <Column Name="MATRICULA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spSetUsuarioXAplicacion" Method="spSetUsuarioXAplicacion">
+    <Parameter Name="IDUSRSXAPP" Parameter="iDUSRSXAPP" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_ASIGNA_ALUMNO_GRUPO" Method="proc_ASIGNA_ALUMNO_GRUPO">
+    <Parameter Name="IDALUMNO" Parameter="iDALUMNO" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="IDGRUPO" Parameter="iDGRUPO" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="IDCICLO" Parameter="iDCICLO" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="USUARIO" Parameter="uSUARIO" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_CATEGORIA" Method="proc_CATEGORIA">
+    <Parameter Name="NOMBRE" Parameter="nOMBRE" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="IMAGECAT" Parameter="iMAGECAT" Type="System.String" DbType="NVarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_CICLOS" Method="proc_CICLOS">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="NOMBRECICLO" Parameter="nOMBRECICLO" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="FECHAINICIAL" Parameter="fECHAINICIAL" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="FECHAFINAL" Parameter="fECHAFINAL" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="MONTOINSCRIPCION" Parameter="mONTOINSCRIPCION" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="MONTOCOLEGIATURA" Parameter="mONTOCOLEGIATURA" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="ESTATUS" Parameter="eSTATUS" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_CLIENTES" Method="proc_CLIENTES">
+    <Parameter Name="IDCLIENTE" Parameter="iDCLIENTE" Type="System.String" DbType="NVarChar(13)" />
+    <Parameter Name="RFCRECEP" Parameter="rFCRECEP" Type="System.String" DbType="NVarChar(13)" />
+    <Parameter Name="NMBRECEP" Parameter="nMBRECEP" Type="System.String" DbType="NVarChar(60)" />
+    <Parameter Name="CALLE" Parameter="cALLE" Type="System.String" DbType="NVarChar(60)" />
+    <Parameter Name="EXT" Parameter="eXT" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="INT" Parameter="iNT" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="COL" Parameter="cOL" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="MUN" Parameter="mUN" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="LOC" Parameter="lOC" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="EDO" Parameter="eDO" Type="System.String" DbType="NVarChar(35)" />
+    <Parameter Name="PAIS" Parameter="pAIS" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="CP" Parameter="cP" Type="System.String" DbType="NVarChar(6)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_EMPRESAS" Method="proc_EMPRESAS">
+    <Parameter Name="IDEMPRESA" Parameter="iDEMPRESA" Type="System.String" DbType="NVarChar(13)" />
+    <Parameter Name="RFCEMISOR" Parameter="rFCEMISOR" Type="System.String" DbType="NVarChar(13)" />
+    <Parameter Name="NMBEMISOR" Parameter="nMBEMISOR" Type="System.String" DbType="NVarChar(60)" />
+    <Parameter Name="CALLE" Parameter="cALLE" Type="System.String" DbType="NVarChar(60)" />
+    <Parameter Name="EXT" Parameter="eXT" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="INT" Parameter="iNT" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="COL" Parameter="cOL" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="MUN" Parameter="mUN" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="LOC" Parameter="lOC" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="EDO" Parameter="eDO" Type="System.String" DbType="NVarChar(35)" />
+    <Parameter Name="PAIS" Parameter="pAIS" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="CP" Parameter="cP" Type="System.String" DbType="NVarChar(6)" />
+    <Parameter Name="REGIMEN" Parameter="rEGIMEN" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_FOLIOS" Method="proc_FOLIOS">
+    <Parameter Name="DOC" Parameter="dOC" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SERIE" Parameter="sERIE" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="INI" Parameter="iNI" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="ACT" Parameter="aCT" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="FIN" Parameter="fIN" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="APROBACION" Parameter="aPROBACION" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="ANO" Parameter="aNO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RFC" Parameter="rFC" Type="System.String" DbType="VarChar(13)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_FORMATOS" Method="proc_FORMATOS">
+    <Parameter Name="NOMBRE" Parameter="nOMBRE" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="FILERUT" Parameter="fILERUT" Type="System.String" DbType="NVarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_GETFOLIOS" Method="proc_GETFOLIOS">
+    <Parameter Name="CveProc" Parameter="cveProc" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="Tipo" Parameter="tipo" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="Serie" Parameter="serie" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="Num_Folio" Parameter="num_Folio" Type="System.Decimal" DbType="Decimal(18,0)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_GRUPOS" Method="proc_GRUPOS">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="IDNIVEL" Parameter="iDNIVEL" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="IDGRADO" Parameter="iDGRADO" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="IDCICLO" Parameter="iDCICLO" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="NOMBREGRUPO" Parameter="nOMBREGRUPO" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_LISTA_ALUMNOS" Method="proc_LISTA_ALUMNOS">
+    <Parameter Name="Matricula" Parameter="matricula" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="Nombres" Parameter="nombres" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="APaterno" Parameter="aPaterno" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="AMaterno" Parameter="aMaterno" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="FechaNacimiento" Parameter="fechaNacimiento" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Estatus" Parameter="estatus" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_LISTA_ALUMNOS_GRUPO" Method="proc_LISTA_ALUMNOS_GRUPO">
+    <Parameter Name="IDGRADO" Parameter="iDGRADO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDGRUPO" Parameter="iDGRUPO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDCICLO" Parameter="iDCICLO" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="proc_LISTA_ALUMNOS_GRUPOResult">
+      <Column Name="IdAlumno" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumeroMatricula" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaMatricula" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="APaterno" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="AMaterno" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Nombres" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaNacimiento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Sexo" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Nacionalidad" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Grado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Grupo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NumeroLista" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EscuelaProcedencia" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Hermanos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GradoHermanos" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Calle" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Numero" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Colonia" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Delegacion" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Estado" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoPostal" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Curp" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="EdadAnos" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EdadMeses" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Tutor" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="UsuarioAlta" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UsuarioModifica" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAlta" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaModifica" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Foto" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="NivelAcademico" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Estatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ServerPath" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Beca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCiclo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FormaPago" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_LISTA_ALUMNOS_GRUPO_ADD" Method="proc_LISTA_ALUMNOS_GRUPO_ADD">
+    <Parameter Name="IDGRADO" Parameter="iDGRADO" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="proc_LISTA_ALUMNOS_GRUPO_ADDResult">
+      <Column Name="IdAlumno" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumeroMatricula" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaMatricula" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="APaterno" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="AMaterno" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Nombres" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaNacimiento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Sexo" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Nacionalidad" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Grado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Grupo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NumeroLista" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EscuelaProcedencia" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Hermanos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GradoHermanos" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Calle" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Numero" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Colonia" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Delegacion" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Estado" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoPostal" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Curp" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="EdadAnos" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EdadMeses" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Tutor" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="UsuarioAlta" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UsuarioModifica" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAlta" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaModifica" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Foto" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="NivelAcademico" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Estatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ServerPath" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Beca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCiclo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FormaPago" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_LISTA_DETALLES" Method="proc_LISTA_DETALLES">
+    <Parameter Name="ID_VENTA" Parameter="iD_VENTA" Type="System.Int32" DbType="Int" />
+    <ElementType Name="proc_LISTA_DETALLESResult">
+      <Column Name="id_venta_detalle" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_producto" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="producto" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="p_venta" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TOTAL" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="aduana" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pedimento" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="f_pedimento" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="predial" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UM" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_LISTA_DEUDORES" Method="proc_LISTA_DEUDORES">
+    <ElementType Name="proc_LISTA_DEUDORESResult">
+      <Column Name="IDALUMNO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="APaterno" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="AMaterno" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Nombres" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="NombreGrupo" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="DescripcionGrado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CONCEPTO" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="MontoActual" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_LISTA_GRADO" Method="proc_LISTA_GRADO">
+    <Parameter Name="NIVEL" Parameter="nIVEL" Type="System.String" DbType="VarChar(2)" />
+    <ElementType Name="proc_LISTA_GRADOResult">
+      <Column Name="IDGRADO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DESCRIPCIONGRADO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_LISTA_PAGOS_ALUMNO" Method="proc_LISTA_PAGOS_ALUMNO">
+    <Parameter Name="IDALUMNO" Parameter="iDALUMNO" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="proc_LISTA_PAGOS_ALUMNOResult">
+      <Column Name="IDALUMNO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CONCEPTO" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="MontoActual" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="FechaMovimiento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_LISTA_PAGOS_ALUMNO_MATRICULA" Method="proc_LISTA_PAGOS_ALUMNO_MATRICULA">
+    <Parameter Name="MATRICULA" Parameter="mATRICULA" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="proc_LISTA_PAGOS_ALUMNO_MATRICULAResult">
+      <Column Name="IDALUMNO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CONCEPTO" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="MontoActual" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="FechaMovimiento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_LISTA_PAGOS_TRANSACCIONES" Method="proc_LISTA_PAGOS_TRANSACCIONES">
+    <Parameter Name="IDPAGO" Parameter="iDPAGO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDALUMNO" Parameter="iDALUMNO" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="proc_LISTA_PAGOS_TRANSACCIONESResult">
+      <Column Name="DESCFORMAPAGO" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idAlumno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idPago" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Concepto" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Monto" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="FechaTransaccion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UsuarioTransaccion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FormaPago" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Referencia" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_LISTA_TEMP_VENTAS" Method="proc_LISTA_TEMP_VENTAS">
+    <Parameter Name="USER_LOGIN" Parameter="uSER_LOGIN" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="proc_LISTA_TEMP_VENTASResult">
+      <Column Name="id_venta_detalle_tmp" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_producto" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="producto" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="p_venta" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TOTAL" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="aduana" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pedimento" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="f_pedimento" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="predial" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UM" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_OBTIENE_PAGO" Method="proc_OBTIENE_PAGO">
+    <Parameter Name="IDPAGO" Parameter="iDPAGO" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="proc_OBTIENE_PAGOResult">
+      <Column Name="IDALUMNO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CONCEPTO" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="MontoActual" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="FechaMovimiento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_PRODS" Method="proc_PRODS">
+    <Parameter Name="ID_PRODUCTO" Parameter="iD_PRODUCTO" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PRODUCTO" Parameter="pRODUCTO" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="ID_UNIDAD_MEDIDA" Parameter="iD_UNIDAD_MEDIDA" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="COMPRA" Parameter="cOMPRA" Type="System.Double" DbType="Float" />
+    <Parameter Name="VENTA" Parameter="vENTA" Type="System.Double" DbType="Float" />
+    <Parameter Name="EXISTENCIA" Parameter="eXISTENCIA" Type="System.Double" DbType="Float" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_REGISTRA_PAGO" Method="proc_REGISTRA_PAGO">
+    <Parameter Name="IDPAGO" Parameter="iDPAGO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDALUMNO" Parameter="iDALUMNO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MONTO" Parameter="mONTO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="REFERENCIA" Parameter="rEFERENCIA" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="MEDIOPAGO" Parameter="mEDIOPAGO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ESTATUS" Parameter="eSTATUS" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_RPT_ALUMNO" Method="proc_RPT_ALUMNO">
+    <Parameter Name="MATRICULA" Parameter="mATRICULA" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="proc_RPT_ALUMNOResult">
+      <Column Name="IdAlumno" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumeroMatricula" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaMatricula" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="APaterno" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="AMaterno" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Nombres" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaNacimiento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Sexo" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Nacionalidad" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Grado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Grupo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NumeroLista" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EscuelaProcedencia" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Hermanos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GradoHermanos" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Calle" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Numero" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Colonia" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Delegacion" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Estado" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoPostal" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Curp" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="EdadAnos" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EdadMeses" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Tutor" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="UsuarioAlta" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UsuarioModifica" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaAlta" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaModifica" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Foto" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="NivelAcademico" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Estatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ServerPath" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Beca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCiclo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FormaPago" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumeroMatricula1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NombrePadreTutor" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="OcupacionPadre" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="TelefonoPadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TelefonoTrabajoPadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CelularPadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FechaNacimientoPadre" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SueldoPadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NacionalidadPadre" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="NombreMadreTutor" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="OcupacionMadre" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="TelefonoMadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TelefonoTrabajoMadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CelularMadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FechaNacimientoMadre" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SueldoMadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NacionalidadMadre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NombreFamVecino" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TelefonoVecino" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TelefonoTrabajoVecino" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CelularVecino" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EducacionFisica" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Medicamento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreMedicamento" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="DosisMedicamento" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="AlimentoProhibido" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Peso" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Talla" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TipoSangre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Enfermedades" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreEnfermedades" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="ProcedimientoCrisis" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Certificado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EnfermedadCertificado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Alergia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreAlergia" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="ProcedimintoCrisisAlergia" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NombreAccidente" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TelefonoAccidente" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NombreHospital" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Medico" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NombreMedico" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TelefonoMedico" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="CedulaMedico" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="AutorizaTraslado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProcedimientoAccidente" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NombreGrupo" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="DescripcionGrado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NombreCiclo" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_RPT_CREDENCIAL" Method="proc_RPT_CREDENCIAL">
+    <Parameter Name="MATRICULA" Parameter="mATRICULA" Type="System.String" DbType="NVarChar(300)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_RPT_PAGOS" Method="proc_RPT_PAGOS">
+    <Parameter Name="FECHA_INI" Parameter="fECHA_INI" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="FECHA_FIN" Parameter="fECHA_FIN" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="proc_RPT_PAGOSResult">
+      <Column Name="IdAlumno" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumeroMatricula" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Apaterno" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="AMaterno" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Nombres" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="NombreGrupo" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="DescripcionGrado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Concepto" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Monto" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="FechaTransaccion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FINI" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="FFIN" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="FPAGO" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="REFERENCIA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_RPT_RECIBO" Method="proc_RPT_RECIBO">
+    <Parameter Name="IDALUMNO" Parameter="iDALUMNO" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="proc_RPT_RECIBOResult">
+      <Column Name="Concepto" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Monto" Type="System.Decimal" DbType="Decimal(16,2)" CanBeNull="true" />
+      <Column Name="FechaTransaccion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FPAGO" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="REFERENCIA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_RPT_RECIBO_ALUMNO" Method="proc_RPT_RECIBO_ALUMNO">
+    <Parameter Name="IDALUMNO" Parameter="iDALUMNO" Type="System.String" DbType="NVarChar(20)" />
+    <ElementType Name="proc_RPT_RECIBO_ALUMNOResult">
+      <Column Name="IdAlumno" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="APaterno" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="AMaterno" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Nombres" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="NombreGrupo" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="DescripcionGrado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NombreCiclo" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_RPT_VENTAS" Method="proc_RPT_VENTAS">
+    <Parameter Name="FECHA_INI" Parameter="fECHA_INI" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="FECHA_FIN" Parameter="fECHA_FIN" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="proc_RPT_VENTASResult">
+      <Column Name="id_venta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="id_producto" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="producto" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="p_venta" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TOTAL" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_TEMP_VENTAS" Method="proc_TEMP_VENTAS">
+    <Parameter Name="USER_LOGIN" Parameter="uSER_LOGIN" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="ID_PRODUCTO" Parameter="iD_PRODUCTO" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="CANTIDAD" Parameter="cANTIDAD" Type="System.Double" DbType="Float" />
+    <Parameter Name="ADUANA" Parameter="aDUANA" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PEDIMENTO" Parameter="pEDIMENTO" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="FECHAPEDIMENTO" Parameter="fECHAPEDIMENTO" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PREDIAL" Parameter="pREDIAL" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_UM" Method="proc_UM">
+    <Parameter Name="UMEDIDA" Parameter="uMEDIDA" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_USER_LOGIN" Method="proc_USER_LOGIN">
+    <Parameter Name="USER_LOGIN" Parameter="uSER_LOGIN" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="USER_PASSWORD" Parameter="uSER_PASSWORD" Type="System.String" DbType="NVarChar(1000)" />
+    <ElementType Name="proc_USER_LOGINResult">
+      <Column Name="nombre" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_USERS" Method="proc_USERS">
+    <Parameter Name="USER_LOGIN" Parameter="uSER_LOGIN" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="USER_PASSWORD" Parameter="uSER_PASSWORD" Type="System.String" DbType="VarChar(8000)" />
+    <Parameter Name="NOMBRE" Parameter="nOMBRE" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="ADMINISTRACION" Parameter="aDMINISTRACION" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="ALUMNOS" Parameter="aLUMNOS" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="PROFESORES" Parameter="pROFESORES" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="COBRANZA" Parameter="cOBRANZA" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="BLOG" Parameter="bLOG" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="AYUDA" Parameter="aYUDA" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IMAGEN" Parameter="iMAGEN" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.proc_USERS_PERMISOS_MOSTRAR" Method="proc_USERS_PERMISOS_MOSTRAR">
+    <Parameter Name="USER_LOGIN" Parameter="uSER_LOGIN" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="proc_USERS_PERMISOS_MOSTRARResult">
+      <Column Name="user_login" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="user_password" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="nombre" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ventas" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="reportes" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="administrar" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="productos" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="clientes" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="facturacion" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="blog" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="imagen" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="proy" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="biblio" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="alumnos" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="profesores" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="cobranza" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ayuda" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="pago" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.proc_VENTA" Method="proc_VENTA">
+    <Parameter Name="USER_LOGIN" Parameter="uSER_LOGIN" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="SERIE" Parameter="sERIE" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NUMERO" Parameter="nUMERO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="DATE" Parameter="dATE" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="TPODOC" Parameter="tPODOC" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="RFCE" Parameter="rFCE" Type="System.String" DbType="NVarChar(13)" />
+    <Parameter Name="NMBE" Parameter="nMBE" Type="System.String" DbType="NVarChar(60)" />
+    <Parameter Name="RFCR" Parameter="rFCR" Type="System.String" DbType="NVarChar(13)" />
+    <Parameter Name="NMBR" Parameter="nMBR" Type="System.String" DbType="NVarChar(60)" />
+    <Parameter Name="MONEDA" Parameter="mONEDA" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="SUBTOTAL" Parameter="sUBTOTAL" Type="System.Double" DbType="Float" />
+    <Parameter Name="IVA" Parameter="iVA" Type="System.Double" DbType="Float" />
+    <Parameter Name="TOTAL" Parameter="tOTAL" Type="System.Double" DbType="Float" />
+    <Parameter Name="COMENT" Parameter="cOMENT" Type="System.String" DbType="NVarChar(300)" />
+    <Parameter Name="PALABRAS" Parameter="pALABRAS" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="METODO" Parameter="mETODO" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="CTAPAGO" Parameter="cTAPAGO" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="LUGAREXP" Parameter="lUGAREXP" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="TPOCAMBIO" Parameter="tPOCAMBIO" Type="System.Double" DbType="Float" />
+    <ElementType Name="proc_VENTAResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_actDeactUsuario" Method="sp_actDeactUsuario">
+    <Parameter Name="TIPOUSUARIOIN" Parameter="tIPOUSUARIOIN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ACTDEACTIVATE" Parameter="aCTDEACTIVATE" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="USUARIOIN" Parameter="uSUARIOIN" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_addUsuarioXAplicacion" Method="sp_addUsuarioXAplicacion">
+    <Parameter Name="IDUSRSXAPP" Parameter="iDUSRSXAPP" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.String" DbType="NVarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_AuditContacto" Method="sp_AuditContacto">
+    <Parameter Name="IDOPERACIONAUDIT" Parameter="iDOPERACIONAUDIT" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDCONTACTO" Parameter="iDCONTACTO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDTIPOCONTACTO" Parameter="iDTIPOCONTACTO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="VALOR" Parameter="vALOR" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="FECHAALTA" Parameter="fECHAALTA" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_AuditDomicilio" Method="sp_AuditDomicilio">
+    <Parameter Name="IDOPERACIONAUDIT" Parameter="iDOPERACIONAUDIT" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDDOMICILIO" Parameter="iDDOMICILIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="CALLE" Parameter="cALLE" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NUMEXT" Parameter="nUMEXT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="NUMINT" Parameter="nUMINT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="IDESTADO" Parameter="iDESTADO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ESTADO" Parameter="eSTADO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDMUN" Parameter="iDMUN" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MUNICIPIO" Parameter="mUNICIPIO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDCOLONIA" Parameter="iDCOLONIA" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="COLONIA" Parameter="cOLONIA" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="CP" Parameter="cP" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FECHAALTA" Parameter="fECHAALTA" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_AuditUser" Method="sp_AuditUser">
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDOPERACIONAUDIT" Parameter="iDOPERACIONAUDIT" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDSEXO" Parameter="iDSEXO" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="IDTIPOPERSONA" Parameter="iDTIPOPERSONA" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="IDESTADOCIVIL" Parameter="iDESTADOCIVIL" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="AREA" Parameter="aREA" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="TIPOUSUARIO" Parameter="tIPOUSUARIO" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="IDUSUARIOAPP" Parameter="iDUSUARIOAPP" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="APATERNO" Parameter="aPATERNO" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AMATERNO" Parameter="aMATERNO" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NOMBRE" Parameter="nOMBRE" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="FECHANACCONST" Parameter="fECHANACCONST" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="USUARIO" Parameter="uSUARIO" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="PASSWORD" Parameter="pASSWORD" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RUTAFOTOPERFIL" Parameter="rUTAFOTOPERFIL" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="FECHAALTA" Parameter="fECHAALTA" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_checkMenuxAppRol" Method="sp_checkMenuxAppRol">
+    <Parameter Name="MENU" Parameter="mENU" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="IDROL" Parameter="iDROL" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_checkMenuxAppRolResult">
+      <Column Name="IDROL" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NOMBREMENU" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_checkMetodo" Method="sp_checkMetodo">
+    <Parameter Name="METODO" Parameter="mETODO" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDSERVICIOS" Parameter="iDSERVICIOS" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_checkMetodoResult">
+      <Column Name="IDMETODOS" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDSERVICIOS" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NOMBREMETODO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RECURRENTE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_checkRolxApp" Method="sp_checkRolxApp">
+    <Parameter Name="ROL" Parameter="rOL" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_checkRolxAppResult">
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDROL" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_checkServicio" Method="sp_checkServicio">
+    <Parameter Name="SERVICIO" Parameter="sERVICIO" Type="System.String" DbType="VarChar(200)" />
+    <ElementType Name="sp_checkServicioResult">
+      <Column Name="IDSERVICIOS" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_checkSubMenuxAppRol" Method="sp_checkSubMenuxAppRol">
+    <Parameter Name="SUBMENU" Parameter="sUBMENU" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="IDPERMISOSMENU" Parameter="iDPERMISOSMENU" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_checkSubMenuxAppRolResult">
+      <Column Name="IDPERMISOSXSUBMENU" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDPERMISOSMENU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NOMBRESUBMENU" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TIPOOBJETO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="URL" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="IMAGEN" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ORDEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TOOLTIP" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_checkUsrXApp" Method="sp_checkUsrXApp">
+    <Parameter Name="TIPOBUSQUEDA" Parameter="tIPOBUSQUEDA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="USUARIO" Parameter="uSUARIO" Type="System.String" DbType="VarChar(150)" />
+    <ElementType Name="sp_checkUsrXAppResult">
+      <Column Name="IDUSRSXAPP" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_checkXApp" Method="sp_checkXApp">
+    <Parameter Name="APLICACION" Parameter="aPLICACION" Type="System.String" DbType="VarChar(200)" />
+    <ElementType Name="sp_checkXAppResult">
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_delMenusXAppRol" Method="sp_delMenusXAppRol">
+    <Parameter Name="IdMenu" Parameter="idMenu" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_delSubMenusXAppRol" Method="sp_delSubMenusXAppRol">
+    <Parameter Name="IdSubMenu" Parameter="idSubMenu" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_getAplicaciones" Method="sp_getAplicaciones">
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TXTBUSQUEDA" Parameter="tXTBUSQUEDA" Type="System.String" DbType="NVarChar(100)" />
+    <ElementType Name="sp_getAplicacionesResult">
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getAppsXUsuario" Method="sp_getAppsXUsuario">
+    <Parameter Name="TIPOBUSQUEDA" Parameter="tIPOBUSQUEDA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="USUARIO" Parameter="uSUARIO" Type="System.String" DbType="VarChar(150)" />
+    <ElementType Name="sp_getAppsXUsuarioResult">
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="URLINICIO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDUSRSXAPP" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getContactos" Method="sp_getContactos">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_getContactosResult">
+      <Column Name="IDCONTACTO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDTIPOCONTACTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIPOCONTACTO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="VALOR" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FECHAALTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getDomicilios" Method="sp_getDomicilios">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_getDomiciliosResult">
+      <Column Name="IDDOMICILIO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CALLE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NUMEXT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NUMINT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IDESTADO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ESTADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDMUN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MUNICIPIO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDCOLONIA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="COLONIA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FECHAALTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getElementsObjectsXIdObj" Method="sp_getElementsObjectsXIdObj">
+    <Parameter Name="IDELEMENTOSXOBJ" Parameter="iDELEMENTOSXOBJ" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_getElementsObjectsXIdObjResult">
+      <Column Name="IDELEMENTOSXOBJ" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDPERMISOSOBJ" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ELEMENTO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TOOLTIP" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getEstacionesXApps" Method="sp_getEstacionesXApps">
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_getEstacionesXAppsResult">
+      <Column Name="IDESTACIONXAPP" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDESTACION" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getMenusXAppRol" Method="sp_getMenusXAppRol">
+    <Parameter Name="IdApp" Parameter="idApp" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IdRol" Parameter="idRol" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_getMenusXAppRolResult">
+      <Column Name="IDPERMISOSMENU" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDROL" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NOMBREMENU" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IMAGEN" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="TIPOOBJETO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="URL" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="TOOLTIP" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ORDEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getMenusXAppRolAdmin" Method="sp_getMenusXAppRolAdmin">
+    <Parameter Name="IdApp" Parameter="idApp" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IdRol" Parameter="idRol" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_getMenusXAppRolAdminResult">
+      <Column Name="IDPERMISOSMENU" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDROL" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NOMBREMENU" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IMAGEN" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="TIPOOBJETO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="URL" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="TOOLTIP" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ORDEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getMetodoXApp" Method="sp_getMetodoXApp">
+    <Parameter Name="IdApp" Parameter="idApp" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="SERVICENAME" Parameter="sERVICENAME" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="METHODNAME" Parameter="mETHODNAME" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="sp_getMetodoXAppResult">
+      <Column Name="IDMETODOS" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDSERVICIOS" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NOMBREMETODO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RECURRENTE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getObjetosXAppRolPage" Method="sp_getObjetosXAppRolPage">
+    <Parameter Name="IdApp" Parameter="idApp" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IdRol" Parameter="idRol" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="Pagina" Parameter="pagina" Type="System.String" DbType="VarChar(500)" />
+    <ElementType Name="sp_getObjetosXAppRolPageResult">
+      <Column Name="IDPERMISOSOBJ" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDROL" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PAGINA" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="NOMBREOBJETO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TIPOOBJETO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TOOLTIP" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getPermisoXApp" Method="sp_getPermisoXApp">
+    <Parameter Name="IdApp" Parameter="idApp" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_getPermisoXAppResult">
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getRolesXApp" Method="sp_getRolesXApp">
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_getRolesXAppResult">
+      <Column Name="IDROL" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getRolesXUserApp" Method="sp_getRolesXUserApp">
+    <Parameter Name="TIPOBUSQUEDA" Parameter="tIPOBUSQUEDA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="USUARIO" Parameter="uSUARIO" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_getRolesXUserAppResult">
+      <Column Name="IDROLXUSUARIO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDROL" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DESCROL" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDESTACIONXAPP" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DescripcionAplicacion" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getSubMenusXIdMenu" Method="sp_getSubMenusXIdMenu">
+    <Parameter Name="IDPERMISOSMENU" Parameter="iDPERMISOSMENU" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_getSubMenusXIdMenuResult">
+      <Column Name="IDPERMISOSXSUBMENU" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDPERMISOSMENU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NOMBRESUBMENU" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IMAGEN" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="TIPOOBJETO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="URL" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="TOOLTIP" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ORDEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getSubMenusXIdMenuAdmin" Method="sp_getSubMenusXIdMenuAdmin">
+    <Parameter Name="IDPERMISOSMENU" Parameter="iDPERMISOSMENU" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_getSubMenusXIdMenuAdminResult">
+      <Column Name="IDPERMISOSXSUBMENU" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDPERMISOSMENU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NOMBRESUBMENU" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IMAGEN" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="TIPOOBJETO" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="URL" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="TOOLTIP" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ORDEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getUsuario" Method="sp_getUsuario">
+    <Parameter Name="TIPOBUSQUEDA" Parameter="tIPOBUSQUEDA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="USUARIO" Parameter="uSUARIO" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_getUsuarioResult">
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDSEXO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDTIPOPERSONA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDESTADOCIVIL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDAREA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DESCAREA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IDTIPOUSUARIO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DESCIDTIPOUSUARIO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IDUSUARIOAPP" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="APATERNO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="AMATERNO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="FECHANACCONST" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="USUARIO" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RUTAFOTOPERFIL" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="FECHAALTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_insAplicacion" Method="sp_insAplicacion">
+    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="PASSWORD" Parameter="pASSWORD" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_insContacto" Method="sp_insContacto">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDTIPOCONTACTO" Parameter="iDTIPOCONTACTO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="VALOR" Parameter="vALOR" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="FECHAALTA" Parameter="fECHAALTA" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_insDomicilio" Method="sp_insDomicilio">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="CALLE" Parameter="cALLE" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NUMEXT" Parameter="nUMEXT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="NUMINT" Parameter="nUMINT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="IDESTADO" Parameter="iDESTADO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ESTADO" Parameter="eSTADO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDMUN" Parameter="iDMUN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MUNICIPIO" Parameter="mUNICIPIO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDCOLONIA" Parameter="iDCOLONIA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="COLONIA" Parameter="cOLONIA" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="CP" Parameter="cP" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FECHAALTA" Parameter="fECHAALTA" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_insDomicilioResult">
+      <Column Name="SCOPE_IDENTITY" Type="System.Decimal" DbType="Decimal(38,0)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_insLogError" Method="sp_insLogError">
+    <Parameter Name="IdApp" Parameter="idApp" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="MENSAJE" Parameter="mENSAJE" Type="System.String" DbType="VarChar(450)" />
+    <Parameter Name="HOSTNAME" Parameter="hOSTNAME" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="IP" Parameter="iP" Type="System.String" DbType="VarChar(40)" />
+    <Parameter Name="STACKTRACE" Parameter="sTACKTRACE" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="DTFECHAERROR" Parameter="dTFECHAERROR" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="VCHUSUARIO" Parameter="vCHUSUARIO" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_insMenuXAppRol" Method="sp_insMenuXAppRol">
+    <Parameter Name="IDROL" Parameter="iDROL" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="NOMBREMENU" Parameter="nOMBREMENU" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="IMAGEN" Parameter="iMAGEN" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="TIPOOBJETO" Parameter="tIPOOBJETO" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="URL" Parameter="uRL" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="TOOLTIP" Parameter="tOOLTIP" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="ORDEN" Parameter="oRDEN" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_insMetodosxApp" Method="sp_insMetodosxApp">
+    <Parameter Name="IDMETODOS" Parameter="iDMETODOS" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDSERVICIOS" Parameter="iDSERVICIOS" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="NOMBREMETODO" Parameter="nOMBREMETODO" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="RECURRENTE" Parameter="rECURRENTE" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_insPermisosxElementoObjeto" Method="sp_insPermisosxElementoObjeto">
+    <Parameter Name="IDPERMISOSOBJ" Parameter="iDPERMISOSOBJ" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="ELEMENTO" Parameter="eLEMENTO" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="TOOLTIP" Parameter="tOOLTIP" Type="System.String" DbType="VarChar(500)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_insPermisosxObjeto" Method="sp_insPermisosxObjeto">
+    <Parameter Name="IDROL" Parameter="iDROL" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="PAGINA" Parameter="pAGINA" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="NOMBREOBJETO" Parameter="nOMBREOBJETO" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="TIPOOBJETO" Parameter="tIPOOBJETO" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="TOOLTIP" Parameter="tOOLTIP" Type="System.String" DbType="VarChar(500)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_insRolesXUsuario" Method="sp_insRolesXUsuario">
+    <Parameter Name="IDROL" Parameter="iDROL" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDESTACIONXAPP" Parameter="iDESTACIONXAPP" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_insRolXApp" Method="sp_insRolXApp">
+    <Parameter Name="ROL" Parameter="rOL" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_insRolXUserApp" Method="sp_insRolXUserApp">
+    <Parameter Name="IDROL" Parameter="iDROL" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDESTACIONXAPP" Parameter="iDESTACIONXAPP" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDROLXUSUARIO" Parameter="iDROLXUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_insServicioWCF" Method="sp_insServicioWCF">
+    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="VarChar(500)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_insSubMenuXAppRol" Method="sp_insSubMenuXAppRol">
+    <Parameter Name="IDPERMISOSMENU" Parameter="iDPERMISOSMENU" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="NOMBRESUBMENU" Parameter="nOMBRESUBMENU" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="IMAGEN" Parameter="iMAGEN" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="TIPOOBJETO" Parameter="tIPOOBJETO" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="URL" Parameter="uRL" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="TOOLTIP" Parameter="tOOLTIP" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="ORDEN" Parameter="oRDEN" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_insUser" Method="sp_insUser">
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDSEXO" Parameter="iDSEXO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDTIPOPERSONA" Parameter="iDTIPOPERSONA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDESTADOCIVIL" Parameter="iDESTADOCIVIL" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDAREA" Parameter="iDAREA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDTIPOUSUARIO" Parameter="iDTIPOUSUARIO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDUSUARIOAPP" Parameter="iDUSUARIOAPP" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="APATERNO" Parameter="aPATERNO" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AMATERNO" Parameter="aMATERNO" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NOMBRE" Parameter="nOMBRE" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="FECHANACCONST" Parameter="fECHANACCONST" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="USUARIO" Parameter="uSUARIO" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="PASSWORD" Parameter="pASSWORD" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RUTAFOTOPERFIL" Parameter="rUTAFOTOPERFIL" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="FECHAALTA" Parameter="fECHAALTA" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="sp_insUserResult">
+      <Column Name="SCOPE_IDENTITY" Type="System.Decimal" DbType="Decimal(38,0)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_updAplicacion" Method="sp_updAplicacion">
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="PASSWORD" Parameter="pASSWORD" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_updContacto" Method="sp_updContacto">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDCONTACTO" Parameter="iDCONTACTO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDTIPOCONTACTO" Parameter="iDTIPOCONTACTO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="VALOR" Parameter="vALOR" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_updDomicilio" Method="sp_updDomicilio">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDDOMICILIO" Parameter="iDDOMICILIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="CALLE" Parameter="cALLE" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NUMEXT" Parameter="nUMEXT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="NUMINT" Parameter="nUMINT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="IDESTADO" Parameter="iDESTADO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ESTADO" Parameter="eSTADO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDMUN" Parameter="iDMUN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MUNICIPIO" Parameter="mUNICIPIO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDCOLONIA" Parameter="iDCOLONIA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="COLONIA" Parameter="cOLONIA" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="CP" Parameter="cP" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_updMenuXAppRol" Method="sp_updMenuXAppRol">
+    <Parameter Name="IDPERMISOSMENU" Parameter="iDPERMISOSMENU" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="NOMBREMENU" Parameter="nOMBREMENU" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="IMAGEN" Parameter="iMAGEN" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="TIPOOBJETO" Parameter="tIPOOBJETO" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="URL" Parameter="uRL" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="TOOLTIP" Parameter="tOOLTIP" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="ORDEN" Parameter="oRDEN" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_updRol" Method="sp_updRol">
+    <Parameter Name="IDROLXUSUARIO" Parameter="iDROLXUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDROL" Parameter="iDROL" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDESTACIONXAPP" Parameter="iDESTACIONXAPP" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_updSubMenuXAppRol" Method="sp_updSubMenuXAppRol">
+    <Parameter Name="IDPERMISOSMENU" Parameter="iDPERMISOSMENU" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDPERMISOSSUBMENU" Parameter="iDPERMISOSSUBMENU" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="NOMBRESUBMENU" Parameter="nOMBRESUBMENU" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="IMAGEN" Parameter="iMAGEN" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="TIPOOBJETO" Parameter="tIPOOBJETO" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="URL" Parameter="uRL" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="TOOLTIP" Parameter="tOOLTIP" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="ORDEN" Parameter="oRDEN" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_updUsuario" Method="sp_updUsuario">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDSEXO" Parameter="iDSEXO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDTIPOPERSONA" Parameter="iDTIPOPERSONA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDESTADOCIVIL" Parameter="iDESTADOCIVIL" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDAREA" Parameter="iDAREA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDTIPOUSUARIO" Parameter="iDTIPOUSUARIO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDUSUARIOAPP" Parameter="iDUSUARIOAPP" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="APATERNO" Parameter="aPATERNO" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AMATERNO" Parameter="aMATERNO" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NOMBRE" Parameter="nOMBRE" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="FECHANACCONST" Parameter="fECHANACCONST" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="USUARIO" Parameter="uSUARIO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PASSWORD" Parameter="pASSWORD" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RUTAFOTOPERFIL" Parameter="rUTAFOTOPERFIL" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spAddCatEspecifico" Method="spAddCatEspecifico">
+    <Parameter Name="NOMBRECATALOGO" Parameter="nOMBRECATALOGO" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="IDCATALOGO" Parameter="iDCATALOGO" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="VALORDESCRIPCION" Parameter="vALORDESCRIPCION" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="RESPUESTA" Parameter="rESPUESTA" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spAddCatGenerales" Method="spAddCatGenerales">
+    <Parameter Name="NOMBRECATALOGO" Parameter="nOMBRECATALOGO" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="IDCATALOGO" Parameter="iDCATALOGO" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="FILTRO" Parameter="fILTRO" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IDCATGENERALESNEW" Parameter="iDCATGENERALESNEW" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spAddConfigApp" Method="spAddConfigApp">
+    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="VALOR" Parameter="vALOR" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IDCONFIGAPPNEW" Parameter="iDCONFIGAPPNEW" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spAddContacto" Method="spAddContacto">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDTIPOCONTACTO" Parameter="iDTIPOCONTACTO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="VALOR" Parameter="vALOR" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="FECHAALTA" Parameter="fECHAALTA" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="spAddContactoResult">
+      <Column Name="SCOPE_IDENTITY" Type="System.Decimal" DbType="Decimal(38,0)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spAddDomicilio" Method="spAddDomicilio">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="CALLE" Parameter="cALLE" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NUMEXT" Parameter="nUMEXT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="NUMINT" Parameter="nUMINT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="IDESTADO" Parameter="iDESTADO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ESTADO" Parameter="eSTADO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDMUN" Parameter="iDMUN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MUNICIPIO" Parameter="mUNICIPIO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDCOLONIA" Parameter="iDCOLONIA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="COLONIA" Parameter="cOLONIA" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="CP" Parameter="cP" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FECHAALTA" Parameter="fECHAALTA" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="spAddDomicilioResult">
+      <Column Name="SCOPE_IDENTITY" Type="System.Decimal" DbType="Decimal(38,0)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spAddUsuario" Method="spAddUsuario">
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDSEXO" Parameter="iDSEXO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDTIPOPERSONA" Parameter="iDTIPOPERSONA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDESTADOCIVIL" Parameter="iDESTADOCIVIL" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDAREA" Parameter="iDAREA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDTIPOUSUARIO" Parameter="iDTIPOUSUARIO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDUSUARIOAPP" Parameter="iDUSUARIOAPP" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="APATERNO" Parameter="aPATERNO" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AMATERNO" Parameter="aMATERNO" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NOMBRE" Parameter="nOMBRE" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="FECHANACCONST" Parameter="fECHANACCONST" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="USUARIO" Parameter="uSUARIO" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="PASSWORD" Parameter="pASSWORD" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RUTAFOTOPERFIL" Parameter="rUTAFOTOPERFIL" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="FECHAALTA" Parameter="fECHAALTA" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="spAddUsuarioResult">
+      <Column Name="SCOPE_IDENTITY" Type="System.Decimal" DbType="Decimal(38,0)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spAddUsuarioXAplicacion" Method="spAddUsuarioXAplicacion">
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spGetCatEspecifico" Method="spGetCatEspecifico">
+    <Parameter Name="IDCATGENERALES" Parameter="iDCATGENERALES" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NOMBRECATALOGO" Parameter="nOMBRECATALOGO" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="IDCATALOGO" Parameter="iDCATALOGO" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="FILTRO" Parameter="fILTRO" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="VALORFILTRO" Parameter="vALORFILTRO" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spGetCatGenerales" Method="spGetCatGenerales">
+    <Parameter Name="IDCATGENERALES" Parameter="iDCATGENERALES" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spGetCatGeneralesResult">
+      <Column Name="IDCATGENERALES" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NOMBRECATALOGO" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="IDCATALOGO" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FILTRO" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spGetConfigApp" Method="spGetConfigApp">
+    <Parameter Name="IDCONFIGAPP" Parameter="iDCONFIGAPP" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spGetConfigAppResult">
+      <Column Name="IDCONFIGAPP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="VALOR" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spGetContactos" Method="spGetContactos">
+    <Parameter Name="IdUsuario" Parameter="idUsuario" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="spGetContactosResult">
+      <Column Name="IDCONTACTO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDTIPOCONTACTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIPOCONTACTO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="VALOR" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FECHAALTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spGetDefinicionTabla" Method="spGetDefinicionTabla">
+    <Parameter Name="NombreTabla" Parameter="nombreTabla" Type="System.String" DbType="NVarChar(150)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spGetDomicilios" Method="spGetDomicilios">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="spGetDomiciliosResult">
+      <Column Name="IDDOMICILIO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CALLE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NUMEXT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NUMINT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IDESTADO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ESTADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDMUN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MUNICIPIO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IDCOLONIA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="COLONIA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FECHAALTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spGetRolesVSUsuario" Method="spGetRolesVSUsuario">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.String" DbType="NVarChar(10)" />
+    <ElementType Name="spGetRolesVSUsuarioResult">
+      <Column Name="IDROL" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="APLICACION" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="IDROLXUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ROLASIGNADO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spGetSysTablaCatalogo" Method="spGetSysTablaCatalogo">
+    <ElementType Name="spGetSysTablaCatalogoResult">
+      <Column Name="IdTable" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spGetUsuario" Method="spGetUsuario">
+    <Parameter Name="IdUsuario" Parameter="idUsuario" Type="System.String" DbType="NVarChar(10)" />
+    <ElementType Name="spGetUsuarioResult">
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDSEXO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDTIPOPERSONA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDESTADOCIVIL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDAREA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDTIPOUSUARIO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDUSUARIOAPP" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="APATERNO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="AMATERNO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="FECHANACCONST" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="USUARIO" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RUTAFOTOPERFIL" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="FECHAALTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spGetUsuarios" Method="spGetUsuarios">
+    <Parameter Name="IdAplicacion" Parameter="idAplicacion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="AMaterno" Parameter="aMaterno" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="APaterno" Parameter="aPaterno" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Usuario" Parameter="usuario" Type="System.String" DbType="NVarChar(150)" />
+    <ElementType Name="spGetUsuariosResult">
+      <Column Name="IDUSUARIO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="AREA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="APATERNO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="AMATERNO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="FECHANACCONST" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="USUARIO" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spRolesVSUsuario" Method="spRolesVSUsuario">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.String" DbType="NVarChar(10)" />
+    <ElementType Name="spRolesVSUsuarioResult">
+      <Column Name="IDROL" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="IDAPLICACION" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="APLICACION" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="IDROLXUSUARIO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spSetCatEspecifico" Method="spSetCatEspecifico">
+    <Parameter Name="NOMBRECATALOGO" Parameter="nOMBRECATALOGO" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="IDCATALOGO" Parameter="iDCATALOGO" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="DESCRIPCIONVALOR" Parameter="dESCRIPCIONVALOR" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="IDCAT" Parameter="iDCAT" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spSetCatGenerales" Method="spSetCatGenerales">
+    <Parameter Name="IDCATGENERALES" Parameter="iDCATGENERALES" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NOMBRECATALOGO" Parameter="nOMBRECATALOGO" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="IDCATALOGO" Parameter="iDCATALOGO" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="FILTRO" Parameter="fILTRO" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spSetConfigApp" Method="spSetConfigApp">
+    <Parameter Name="IDCONFIGAPP" Parameter="iDCONFIGAPP" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="VALOR" Parameter="vALOR" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spSetContacto" Method="spSetContacto">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDCONTACTO" Parameter="iDCONTACTO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDTIPOCONTACTO" Parameter="iDTIPOCONTACTO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="VALOR" Parameter="vALOR" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spSetDomicilio" Method="spSetDomicilio">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDDOMICILIO" Parameter="iDDOMICILIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="CALLE" Parameter="cALLE" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NUMEXT" Parameter="nUMEXT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="NUMINT" Parameter="nUMINT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="IDESTADO" Parameter="iDESTADO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ESTADO" Parameter="eSTADO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDMUN" Parameter="iDMUN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MUNICIPIO" Parameter="mUNICIPIO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDCOLONIA" Parameter="iDCOLONIA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="COLONIA" Parameter="cOLONIA" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="CP" Parameter="cP" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spSetUsuario" Method="spSetUsuario">
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPLICACION" Parameter="iDAPLICACION" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDSEXO" Parameter="iDSEXO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDTIPOPERSONA" Parameter="iDTIPOPERSONA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDESTADOCIVIL" Parameter="iDESTADOCIVIL" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDAREA" Parameter="iDAREA" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDTIPOUSUARIO" Parameter="iDTIPOUSUARIO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDUSUARIOAPP" Parameter="iDUSUARIOAPP" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="APATERNO" Parameter="aPATERNO" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="AMATERNO" Parameter="aMATERNO" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NOMBRE" Parameter="nOMBRE" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="FECHANACCONST" Parameter="fECHANACCONST" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="USUARIO" Parameter="uSUARIO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PASSWORD" Parameter="pASSWORD" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RUTAFOTOPERFIL" Parameter="rUTAFOTOPERFIL" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="ACTIVO" Parameter="aCTIVO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IDUSERMODIFICA" Parameter="iDUSERMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDAPPMODIFICA" Parameter="iDAPPMODIFICA" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
